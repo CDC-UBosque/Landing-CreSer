@@ -1,0 +1,120 @@
+h1{
+	word-break: break-word;
+	display: inline-block;
+	position: relative;
+	@include font_universal (
+		$font_family_line_height: 47px,
+		$font_family_weight: 300,
+		$font_family_size: 38px,
+		$font_family_color: $color_green_dark,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_black
+	);
+	@media (max-width: $breakpoint_2){
+		font-size: 33px;
+		line-height: 33px;
+	};
+	
+	@media (max-width: $breakpoint_4){
+		font-size: 22px;
+		line-height: 23px;
+		word-break: break-all;
+	};
+	
+	&:after{
+		position: absolute;
+		content: "";
+		background: $color_lime;
+		height: 7px;
+		width: 10rem;
+		top: -2rem;
+		left: 0;
+	}
+}
+
+h2{
+	word-break: break-word;
+	display: block;
+	margin: 0;
+	@include font_universal (
+		$font_family_line_height: 27px ,
+		$font_family_weight: 300,
+		$font_family_size: 21px,
+		$font_family_color: $color_text ,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_bold
+	);
+	
+}
+
+h3{
+	word-break: break-word;
+	display: block;
+	margin: 0;
+	@include font_universal (
+		$font_family_line_height: 25px,
+		$font_family_weight: 300,
+		$font_family_size: 17px,
+		$font_family_color: $color_text,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_black
+	);
+}
+
+h4{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 18px,
+		$font_family_weight: 300,
+		$font_family_size: 16px,
+		$font_family_color: $color_text,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_ultralight
+	);
+	
+	b{
+		font-family: $font_acherus_bold;
+	}
+	
+	@media (max-width: $breakpoint_4){
+		font-size: 13px;
+		line-height: 15px;
+	}
+	
+}
+
+h5{
+	word-break: break-word;
+	display: block;
+	margin: 0;
+	@include font_universal (
+		$font_family_line_height: 19px,
+		$font_family_weight: 300,
+		$font_family_size: 16px,
+		$font_family_color: $color_text,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_lato_italic
+	);
+}
+
+h6{
+	word-break: break-word;
+	display: block;
+	@include font_universal (
+		$font_family_line_height: 20px,
+		$font_family_weight: 300,
+		$font_family_size: 14px,
+		$font_family_color: $color_text,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_ultralight
+	);
+}
+
+p{
+	
+	b{
+		font-family: $font_acherus_bold;
+	}
+	
+}

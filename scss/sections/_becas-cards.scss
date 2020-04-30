@@ -1,0 +1,45 @@
+/* ---------------------------------- becas  -----------------------------
+	------------------------------------------------------------------------------- */
+
+.cards-content{
+	grid-gap: 2rem;
+	@include display-grid;
+	@include grid-parent-3-columns (1fr, 1fr, 1fr);
+	
+	.cards{
+		margin: 2rem 0;
+		
+		.box{
+			padding: 1rem 1.5rem;
+			background: $color_light_grey;
+		}
+		
+		.acordiones{
+			position: relative;
+			margin-top: -2rem;
+			text-align: center;
+			
+			.ui-accordion-header{
+				@include btn_white;
+			}
+			
+			.ui-state-active{
+				@include btn_white_active;
+			}
+			
+			.ui-accordion-content{
+				text-align: left;
+				border: 2px solid $color_green;
+				padding: 1rem;
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+
+

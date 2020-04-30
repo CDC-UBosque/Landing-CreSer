@@ -1,0 +1,118 @@
+/* ---------------------------------- header  -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+header{
+	background: $color_green;
+	max-height: 700px;
+	
+	.content{
+		@include max-width;
+		@include display-grid;
+		@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+		
+		nav{
+			@include grid-child-column (1, 13);
+			@include grid-child-row (1, 2); 
+			
+			ul{
+				margin: 0;
+				padding: 2rem;
+				
+				li{
+					list-style-type: none;
+					display: inline-block;
+					
+					a.txt{
+						
+						@include font_universal (
+							$font_family_line_height: 22px,
+							$font_family_weight: 300,
+							$font_family_size: 18px,
+							$font_family_color: $color-brand-white,
+							$font_family_letter_spacing: 0,
+							$font_family_group: $font_acherus_regular
+						);
+						
+						&:after{
+							position: absolute;
+							content: "";
+							background: $color_yellow;
+							height: 2px;
+							width: 100%;
+							bottom: 0rem;
+							left: 0;
+						}
+						
+					}
+					
+					a{
+						vertical-align: middle;
+						margin-right: 2rem;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	div{
+		
+		&:nth-child(2){
+			place-self: center;
+			position: relative;
+			right: -5rem;
+			margin-top: 3rem;
+			@include grid-child-column (1, 4);
+			@include grid-child-row (2, 4); 
+			img{
+				max-width: 330px;
+			}
+		}
+		
+		&:nth-child(3){
+			place-self: center;
+			text-align: center;
+			@include grid-child-column (5, 9);
+			@include grid-child-row (2, 3); 
+			img{
+				max-width: 289px;
+			}
+			a{
+				@include btn_dark_green;
+			}
+		}
+		
+		&:nth-child(4){
+			place-self: center;
+			position: relative;
+			left: -3rem;
+			@include grid-child-column (5, 9);
+			@include grid-child-row (3, 5); 
+			img{
+				max-width: 300px;
+			}
+		}
+		
+		&:nth-child(5){
+			place-self: center;
+			align-self: start;
+			position: relative;
+			left: -3rem;
+			@include grid-child-column (10, 13);
+			@include grid-child-row (2, 4); 
+			img{
+				max-width: 400px;
+			}
+		}
+		
+	}
+	
+}
+	
+
+
+
