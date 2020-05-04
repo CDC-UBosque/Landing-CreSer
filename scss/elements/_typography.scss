@@ -37,12 +37,12 @@ h2{
 	display: block;
 	margin: 0;
 	@include font_universal (
-		$font_family_line_height: 27px ,
+		$font_family_line_height: 30px ,
 		$font_family_weight: 300,
-		$font_family_size: 21px,
-		$font_family_color: $color_text ,
+		$font_family_size: 26px,
+		$font_family_color: $color_text_darker,
 		$font_family_letter_spacing: 0,
-		$font_family_group: $font_acherus_bold
+		$font_family_group: $font_acherus_black
 	);
 	
 }
@@ -54,10 +54,10 @@ h3{
 	@include font_universal (
 		$font_family_line_height: 25px,
 		$font_family_weight: 300,
-		$font_family_size: 17px,
-		$font_family_color: $color_text,
+		$font_family_size: 22px,
+		$font_family_color: $color_text_darker,
 		$font_family_letter_spacing: 0,
-		$font_family_group: $font_acherus_black
+		$font_family_group: $font_acherus_light
 	);
 }
 

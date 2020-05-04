@@ -55,20 +55,21 @@ html{
 			@include prefix(transition, all 0.3s ease, webkit moz o ms);
 		}
 		
-		hr{
-			width: 100%;
-			border-top: 1px solid;
-			
-			@media (max-width: $breakpoint_4){
-				margin: .3rem 0;
-			}
-	
-		}
-		
-		ul{
+		ul {
+			list-style: none; /* Remove default bullets */
 			margin: 0;
 		}
-				
+		
+		ul li::before {
+			content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+			color: $color_lime; /* Change the color */
+			font-weight: bold; /* If you want it to be bold */
+			display: inline-block; /* Needed to add space between the bullet and the text */
+			width: 1em; /* Also needed for space (tweak if needed) */
+			margin-left: -1em; /* Also needed for space (tweak if needed) */
+		}
+
+
 	}
 	
 }

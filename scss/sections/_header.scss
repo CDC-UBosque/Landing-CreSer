@@ -23,6 +23,10 @@ header{
 					list-style-type: none;
 					display: inline-block;
 					
+					&:before{
+						display: none;
+					}
+					
 					a.txt{
 						
 						@include font_universal (

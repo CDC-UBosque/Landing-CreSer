@@ -345,6 +345,46 @@ $font_family_group: $family) {
 	}
 }
 
+@mixin btn_lime{
+	background: $color_lime;
+	border: 2px solid $color_lime;
+	border-radius: 5rem;
+	padding: 0.6rem 2rem;
+	margin: 0 1rem;
+	@include font_universal (
+		$font_family_line_height: 26px,
+		$font_family_weight: 300,
+		$font_family_size: 22px,
+		$font_family_color: $color_green_dark,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_bold
+	);
+	&:hover{
+		background: $color_green_dark;
+		color: $color-brand-white;
+	}
+}
+
+@mixin btn_green{
+	background: $color_green;
+	border: 2px solid $color_green;
+	border-radius: 5rem;
+	padding: 0.6rem 1.5rem;
+	margin: 1rem;
+	@include font_universal (
+		$font_family_line_height: 19px,
+		$font_family_weight: 300,
+		$font_family_size: 15px,
+		$font_family_color: $color-brand-white,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_lato_bold
+	);
+	&:hover{
+		background: $color-brand-white;
+		color: $color_green;
+	}
+}
+
 
 
 

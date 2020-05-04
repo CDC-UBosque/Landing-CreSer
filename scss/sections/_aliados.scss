@@ -1,0 +1,39 @@
+/* ---------------------------------- aliados -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+.aliados{
+	
+	div{
+		grid-gap: 1rem;
+		@include display-grid;
+		@include grid-parent-4-columns (1fr, 1fr, 1fr, 1fr);
+		
+		img{
+			align-self: center;
+			
+			&:nth-child(1){
+				max-width: 340px;
+			}
+			
+			&:nth-child(2){
+				max-width: 198px;
+			}
+			
+			&:nth-child(3){
+				max-width: 118px;
+			}
+			
+			&:nth-child(4){
+				max-width: 285px;
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+

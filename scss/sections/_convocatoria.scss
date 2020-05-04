@@ -1,0 +1,30 @@
+/* ---------------------------------- convocatoria -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+.convocatoria{
+	margin-top: 9rem;
+	
+	div{
+		position: relative;
+		padding: 2rem 5rem;
+		background: $color_lime;
+		
+		h3{
+			margin-left: 1rem;
+		}
+		
+		img{
+			position: absolute;
+			max-width: 350px;
+			bottom: 0;
+			right: 10%;
+		}
+		
+	}
+	
+}
+
+
+
+

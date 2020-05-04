@@ -38,59 +38,132 @@ block content
 				div.box
 					h2 Excelencia académica - Permanencia
 					p Mejor promedio de cada programa y que se encuentre cursando desde el primer hasta el último semestre, en los programas de pregrado.
-				div.acordion1
+				div.acordion1.accordions.mobile
 					a Más Información
-						div
-							h3 Becas de excelencia académica - Permanencia.
-							p Se adjudicará beca condonable no renovable hasta por el 50% del valor de la matrícula para el siguiente período académico, al estudiante que obtenga el mejor promedio de cada programa y que se encuentre cursando desde el primer hasta el último semestre, en los programas de pregrado.
-							p En caso de encontrar dos o más estudiantes con igual promedio semestral del mismo programa, se escogerá al estudiante con mejor promedio ponderado de toda la carrera y en el caso de encontrar dos o más estudiantes con igual promedio ponderado, el beneficio se otorgará proporcionalmente entre los opcionados.
-							p Podrá ser candidato y beneficiarse de esta beca el estudiante que cumpla con los siguientes requisitos generales:
-							ul
-								li Ser presentado ante el comité de becas y estímulos de la universidad
-								li Estar a paz y salvo por todo concepto administrativo y financiero con la universidad
-								li No registrar notificaciones disciplinarias durante toda la carrera
-								li Se adjudica por parte del comité de becas y estímulos dependiendo del presupuesto disponible de la Universidad.
-								li Aplicar y adjuntar documentos por la página <a href="www.ueb/seres.edu.co" target="_blank">www.ueb/seres.edu.co</a>
-								li No se reciben aplicaciones luego de la fecha de cierre de las convocatorias
-								
+						+acordion-1
 								
 			div.cards
 				img(src="images/photos/grupos-especiales.png" alt="Grupos especiales")
 				div.box
 					h2 Grupos especiales
 					p Dirigida a estudiantes que hayan finalizado la ruta de la reintegración de forma exitosa,  personas provenientes del programa de víctimas del gobierno nacional, a los huérfanos del ICBF y/o a ex miembros de la fuerza pública en situación de discapacidad, a sus familias, y a las viudas y huérfanos de la nación o que pertenezcan a poblaciones especiales (etnias) que sean admitidos en los diferentes programas de pregrado
-				div.acordion2
+				div.acordion2.accordions.mobile
 					a Más Información
-						div
-							h3 Becas para grupos especiales - Becas para el postconflicto.
-							p Beca condonable y renovable hasta el 90% del valor de la matrícula, para facilitar el ingreso y permanencia para estudiantes que hayan finalizado la ruta de la reintegración de forma exitosa, personas provenientes del programa de víctimas del gobierno nacional, a los huérfanos del ICBF y/o a ex miembros de la fuerza pública en situación de discapacidad, a sus familias, y a las viudas y huérfanos de la nación.
-							p Estas becas serán otorgadas en alianza con entes gubernamentales y/u ONG's que además apoyen en la búsqueda de los beneficiarios y aseguren la idoneidad de sus perfiles.
+						+acordion-2
+						
+			div.cards
+				img(src="images/photos/merito-academico.png" alt="Merito académico")
+				div.box
+					h2 Mérito Académico y necesidad socio - económica
+					p Ayuda económica, que la Universidad proporciona a los estudiantes de pregrado que cursen desde segundo semestre en adelante, con mérito académico y comprobada necesidad socioeconómica.
+				div.acordion3.accordions.mobile
+					a Más Información
+						+acordion-3
+						
 							
-							h3 Requisitos específicos
-							ul
-								li Además de cumplir con los requisitos académicos establecidos por la Universidad para su admisión, deberá acreditar su condición mediante certificación expedida por autoridad competente. 
-								li Aplicar y adjuntar documentos por la página www.ueb/seres.edu.co
-								li Queda a juicio del Comité de Becas y Estímulos adjudicar estos estímulos de conformidad con la disponibilidad del presupuesto y para los siguientes semestres del programa académico, se adjudicarán siempre y cuando el rendimiento académico sea superior a 3.5 semestral y no tenga asignaturas perdidas.
-								li Los beneficios se mantendrán a lo largo de la carrera, siempre y cuando el estudiante no pierda el período académico o el cupo, no haya tenido una sanción disciplinaria y haya cumplido con el número de horas de compensación exigido por la Universidad
-								li No se reciben aplicaciones luego de la fecha de cierre de las convocatorias
+		
+		div.acordion_desktop
+			+acordion-1
+			+acordion-2
+			+acordion-3
+			
+		
+		div.cards-content
+			div.cards
+				img(src="images/photos/programa-semillas.png" alt="Programa semillas")
+				div.box
+					h2 Programa Semillas
+					p Buscamos formar grandes profesionales y dar apoyo económico a estudiantes de escasos recursos con un alto rendimiento académico, beneficiando su calidad de vida a través de su formación de pregrado y del entorno universitario que ofrece nuestra institución.
+				div.acordion4.accordions.mobile
+					a Más Información
+						+acordion-4
 								
-							h3 Becas para grupos especiales - Becas para grupos minoritarios.
-							p Beca condonable y renovable hasta el 50% del valor de la matrícula, para facilitar el ingreso y permanencia para estudiantes que pertenezcan a poblaciones especiales (etnias) que sean admitidos en los diferentes programas de pregrado. Estas becas se adjudican por parte del comité de becas y estímulos dependiendo el presupuesto disponible de la Universidad.
-							
-							h3 Requisitos
-							ul
-								li Además de cumplir con los requisitos académicos establecidos por la Universidad para  su emisión, deberán acreditar su condición mediante certificación expedida por la autoridad competente. Esta solicitud y los documentos requeridos deben radicarse en el departamento de Finanzas Estudiantiles antes de iniciar el semestre académico.
-								li Queda a juicio del comité de becas y estímulos adjudicar estos estímulos de conformidad con la disponibilidad del presupuesto y se dará renovación automática a la beca siempre y cuando el promedio académico sea superior a 3.8 y no tenga asignaturas perdidas.
-								li Los beneficios se mantendrán a lo largo de la carrera, siempre y cuando el estudiante no pierda el período académico o el cupo, no haya tenido una sanción disciplinaria y haya cumplido con el número de horas de compensación exigido por la Universidad.
-								li Aplicar y adjuntar documentos por la página www.ueb/seres.edu.co
-								li No se reciben aplicaciones luego de la fecha de cierre de las convocatorias
+			div.cards
+				img(src="images/photos/enocnomia-naranja.png" alt="Economáa naranja")
+				div.box
+					h2 Economía Naranja Banco de Bogotá
+					p Buscamos apoyar las carreras en el marco de las industrias creativas y la cultura como un motor de desarrollo para el país.
+				div.acordion5.accordions.mobile
+					a Más Información
+						+acordion-5
+						
+			div.cards
+				img(src="images/photos/fundacion-bolivar.png" alt="Fundación bolivar")
+				div.box
+					h2 Becas al Talento - Fundación Bolívar Davivienda
+					p Para evitar la deserción de jóvenes destacados por su desempeño académico en la vida universitaria, la Fundación Bolívar Davivienda ha creado el programa Becas Crédito por la Excelencia, que está dirigido a estudiantes de pregrado con altas calificaciones, que se encuentren cursando entre 5to y 8vo semestre, y que estén atravesando por dificultades económicas que les impidan la continuidad de su proceso formativo.
+				div.acordion6.accordions.mobile
+					a Más Información
+						+acordion-6
 				
 		
+		div.acordion_desktop
+			+acordion-4
+			+acordion-5
+			+acordion-6
+			
 		
-	//-------------------------	
-	//- Neurona 1
-	//-------------------------		
-	//+anexos
+	section.convocatoria
+		div
+			h2 Convocatoria
+			h3 Fecha de Apertura: 15 mayo 2020
+			h3 Fecha de Cierre: 15 junio 2020
+			img(src="images/photos/convocatoria.png" alt="convocatoria")
+			
+	
+	section.interesar
+		h1 Te puede interesar
+		div.video
+			div.embed-container
+				<iframe src="https://www.youtube.com/embed/lZSs6pogoPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			
+	section.requisitos
+		div.image
+			img(src="images/photos/requisitos.png" alt="requisitos")
+		div.txt
+			h1 Requisitos
+			ul
+				li Promedio acumulado mínimo 3.8
+				li No ser beneficiario de otra beca.
+				li No haber perdido asignaturas.
+				li Matricular todos los créditos.
+				li Estar a paz y salvo con la Universidad.
+				li No presentar fallas disciplinarias.
+				li En caso de ser otorgada alguna de las becas se debe cumplir con el programa de compensación de horas.
+				li Los beneficios económicos otorgados no son acumulables.
+				
+				
+	section.aplicar
+		div
+			h1 Aplica a través del siguiente formulario
+			a(href="https://forms.gle/iGotn6yUAHwn1L2U7" target="_blank") Aplicar
+			
+			
+	section.resultados
+		div.resultados_convocatoria
+			h3 Resultados convocatoria 2020 -2
+			a Consultar
+			div.resultados_consultar
+				p Aquí podrás consultar si has sido elegido como beneficiario de alguno de nuestros Apoyos Económicos
+				
+		div.otras_becas
+			h3 Para otras Becas: Acuerdo 14608 de 2017
+			a(href="pdf/politica-de-becas-universidad-el-bosque.pdf" target="_blank") Consultar
+			
+			
+	section.aliados
+		h1 Aliados estratégicos
+		div
+			img(src="images/photos/logo-banco-bogota.png" alt="Banco de bogotá")
+			img(src="images/photos/fundacion-bolivar-davivienda.png" alt="Fundación bolivar davivienda")
+			img(src="images/photos/fundacion-tomas-rueda.png" alt="Fundación tomas rueda")
+			img(src="images/photos/parqueaderos-tequendama.png" alt="Parqueaderos tequendama")
+			
+			
+	footer
+		hr
+		p <b>Mayor información: <a href="mailto:apoyoseconomicos@unbosque.edu.co" target="_blank">apoyoseconomicos@unbosque.edu.co</a> <br/> Extensiones 1910 - 1124</b>
 	
 	
 	

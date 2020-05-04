@@ -1,0 +1,63 @@
+/* ---------------------------------- resultados -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+.resultados{
+	grid-gap: 3rem;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	
+	div{
+		text-align: center;
+		position: relative;
+		padding: 2rem 2rem 1rem;
+		
+		h3{
+			@include font_universal (
+				$font_family_line_height: 26px,
+				$font_family_weight: 300,
+				$font_family_size: 24px,
+				$font_family_color: $color_green_dark,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font_acherus_black
+			);
+		}
+		
+		a{
+			@include btn_green;
+		}
+		
+	}
+	
+	.resultados_convocatoria{
+		background: $color_light_grey url('../images/svg/resultados-convocatoria.svg');
+		background-repeat: no-repeat;
+		background-position: 60% 80%;
+		
+		.resultados_consultar{
+			display: none;
+		}
+		
+		.resultados_consultar.open{
+			display: block;
+			position: absolute;
+			border: 2px solid $color_green;
+			background: $color-brand-white;
+			z-index: 10;
+			margin: 0 2rem;
+			padding: 0 1rem;
+		}
+		
+	}
+	
+	.otras_becas{
+		background: $color_light_grey url('../images/svg/para-otras-becas.svg');
+		background-repeat: no-repeat;
+		background-position: 60% 190%;
+	}
+	
+}
+
+
+
+

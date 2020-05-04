@@ -1,0 +1,46 @@
+/* ---------------------------------- requisitos -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+.requisitos{
+	margin-top: 12rem;
+	grid-gap: 3rem;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+		
+	.image{
+		position: relative;
+		max-height: 360px;
+		background: $color_green;
+		@include grid-child-column (1, 2);
+		@include grid-child-row (1, 2); 
+		
+		&:before{
+			content: "";
+			background: $color_green;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 300%;
+			left: -300%;
+		}
+		
+		img{
+			position: absolute;
+			max-width: 360px;
+			bottom: 0;
+			right: 20%;
+		}
+		
+	}
+	
+	.txt{
+		@include grid-child-column (2, 3);
+		@include grid-child-row (1, 2); 
+	}
+	
+}
+
+
+
+

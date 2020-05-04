@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Detalle-excelencia-academica" transform="translate(-1270.000000, -882.000000)">
+            <g id="Group-2" transform="translate(1270.000000, 882.000000)">
+                <circle id="Oval" fill="#9FC939" cx="14" cy="14" r="14"></circle>
+                <path d="M14.024,16.528 L11.896,19.568 C11.656,19.904 11.56,20 11.272,20 L9.224,20 C8.92,20 8.776,19.904 9,19.568 L12.68,14.48 L8.952,9.232 C8.728,8.896 8.856,8.8 9.16,8.8 L11.208,8.8 C11.496,8.8 11.608,8.896 11.832,9.232 L14.024,12.432 L16.216,9.232 C16.456,8.896 16.552,8.8 16.84,8.8 L18.888,8.8 C19.192,8.8 19.336,8.896 19.096,9.232 L15.384,14.48 L19.064,19.568 C19.288,19.904 19.16,20 18.856,20 L16.808,20 C16.52,20 16.424,19.904 16.168,19.568 L14.024,16.528 Z" id="X" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
