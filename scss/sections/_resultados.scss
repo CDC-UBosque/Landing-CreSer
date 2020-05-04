@@ -31,6 +31,10 @@
 			@include btn_green;
 		}
 		
+		a.open{
+			@include btn_green_active;
+		}
+		
 	}
 	
 	.resultados_convocatoria{
@@ -40,16 +44,27 @@
 		
 		.resultados_consultar{
 			display: none;
-		}
-		
-		.resultados_consultar.open{
-			display: block;
+			position: absolute;
 			position: absolute;
 			border: 2px solid $color_green;
 			background: $color-brand-white;
 			z-index: 10;
 			margin: 0 2rem;
 			padding: 0 1rem;
+			
+			.close-button{
+				position: absolute;
+				top: -1rem;
+				right: -1rem;
+				&:hover{
+					opacity: .5;
+				}
+			}
+			
+		}
+		
+		.resultados_consultar.open{
+			display: block;
 		}
 		
 	}

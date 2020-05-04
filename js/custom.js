@@ -153,9 +153,14 @@
 	// -------------
 	// resultados consultar
 	
-	$(".resultados a").click(function() {
+	$(".resultados_convocatoria a").click(function() {
 		$(".resultados_consultar").toggleClass("open");
-		$(".resultados a").toggleClass("open");
+		$(".resultados_convocatoria a").toggleClass("open");
+	});
+	
+	$(".resultados_convocatoria .close-button").click(function() {
+		$(".resultados_consultar").toggleClass("open");
+		$(".resultados_convocatoria a").toggleClass("open");
 	});
 	
 })(jQuery);

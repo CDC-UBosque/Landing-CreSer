@@ -44,10 +44,26 @@ html{
 			position: relative;
 			color: $color_green_dark;
 			@include prefix(transition, all 0.3s ease, webkit moz o ms);
-			@media (max-width: $breakpoint_3){
-				padding: .1rem 0;
-				font-size: 14px;
-				line-height: 16px;
+			
+			&:after{
+				content: "";
+				position: absolute;
+				background: $color_green_dark;
+				width: 0;
+				height: 1px;
+				bottom: 1px;
+				left: 0;
+				@include prefix(transition, all 0.3s ease, webkit moz o ms);
+			}
+			
+			&:hover{
+				&:after{
+					content: "";
+					position: absolute;
+					background: $color_green_dark;
+					width: 100%;
+					height: 1px;
+				}
 			}
 			
 		}

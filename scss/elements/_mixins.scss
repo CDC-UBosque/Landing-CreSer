@@ -275,6 +275,9 @@ $font_family_group: $family) {
 		$font_family_letter_spacing: 0,
 		$font_family_group: $font_acherus_bold
 	);
+	&:after{
+		display: none;
+	}
 	&:hover{
 		background: $color-brand-white;
 		color: $color_green_dark;
@@ -298,6 +301,9 @@ $font_family_group: $family) {
 		$font_family_letter_spacing: 0,
 		$font_family_group: $font_lato_bold
 	);
+	&:after{
+		display: none;
+	}
 	&:hover{
 		background: $color_green url('../images/svg/arrow-up.svg');
 		background-size: 1rem;
@@ -330,6 +336,9 @@ $font_family_group: $family) {
 		$font_family_letter_spacing: 0,
 		$font_family_group: $font_lato_bold
 	);
+	&:after{
+		display: none;
+	}
 	&:hover{
 		background: $color-brand-white url('../images/svg/arrow.svg');
 		background-size: 1rem;
@@ -359,6 +368,9 @@ $font_family_group: $family) {
 		$font_family_letter_spacing: 0,
 		$font_family_group: $font_acherus_bold
 	);
+	&:after{
+		display: none;
+	}
 	&:hover{
 		background: $color_green_dark;
 		color: $color-brand-white;
@@ -379,9 +391,35 @@ $font_family_group: $family) {
 		$font_family_letter_spacing: 0,
 		$font_family_group: $font_lato_bold
 	);
+	&:after{
+		display: none;
+	}
 	&:hover{
 		background: $color-brand-white;
 		color: $color_green;
+	}
+}
+
+@mixin btn_green_active{
+	background: $color-brand-white;
+	border: 2px solid $color_green;
+	border-radius: 5rem;
+	padding: 0.6rem 1.5rem;
+	margin: 1rem;
+	@include font_universal (
+		$font_family_line_height: 19px,
+		$font_family_weight: 300,
+		$font_family_size: 15px,
+		$font_family_color: $color_green,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_lato_bold
+	);
+	&:after{
+		display: none;
+	}
+	&:hover{
+		background: $color_green;
+		color: $color-brand-white;
 	}
 }
 

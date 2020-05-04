@@ -77,8 +77,67 @@
 			$font_family_letter_spacing: 0,
 			$font_family_group: $font_acherus_black
 		);
+		@media (max-width: $breakpoint_3){
+			padding-right: 2rem;
+		}
 	}
 	
+}
+
+.content_accordion_1,
+.content_accordion_4{
+	&:before{
+		content: "";
+		background: url('../../images/svg/triangle-up.svg');
+		position: absolute;
+		top: -12px;
+		width: 1.4rem;
+		height: 0.8rem;
+		background-repeat: repeat;
+		left: 15%;
+	}
+}
+
+.content_accordion_2,
+.content_accordion_5{
+	&:before{
+		content: "";
+		background: url('../../images/svg/triangle-up.svg');
+		position: absolute;
+		top: -12px;
+		width: 1.4rem;
+		height: 0.8rem;
+		background-repeat: repeat;
+		left: 50%;
+	}
+}
+
+.content_accordion_3,
+.content_accordion_6{
+	&:before{
+		content: "";
+		background: url('../../images/svg/triangle-up.svg');
+		position: absolute;
+		top: -12px;
+		width: 1.4rem;
+		height: 0.8rem;
+		background-repeat: repeat;
+		right: 15%;
+	}
+}
+
+.content_accordion_1,
+.content_accordion_2,
+.content_accordion_3,
+.content_accordion_4,
+.content_accordion_5,
+.content_accordion_6{
+	&:before{
+		@media (max-width: $breakpoint_3){
+			right: initial;
+			left: 50%;
+		}
+	}
 }
 	
 
