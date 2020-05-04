@@ -6,11 +6,11 @@
 	
 	div{
 		text-align: center;
-		padding: 2rem;
+		padding: 0 2rem;
 		background: $color_green_dark;
 	
 		h1{
-			margin: 0;
+			margin: 2rem 0;
 			color: $color-brand-white;
 			
 			&:after{
@@ -22,6 +22,11 @@
 		a{
 			top: -0.3rem;
 			@include btn_lime;
+			
+			@media (max-width: $breakpoint_1){
+				margin-bottom: 2rem;
+			}
+			
 		}
 	
 	}

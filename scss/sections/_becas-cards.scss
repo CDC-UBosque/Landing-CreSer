@@ -6,31 +6,30 @@
 	@include display-grid;
 	@include grid-parent-3-columns (1fr, 1fr, 1fr);
 	
+	@media (max-width: $breakpoint_3){
+		margin-bottom: 2rem;
+		@include grid-parent-1-columns (1fr);
+	}
+	
 	.cards{
 		margin: 2rem 0;
+		@media (max-width: $breakpoint_3){
+			margin: 0;
+		}
 		
 		.box{
 			padding: 1rem 1.5rem;
 			background: $color_light_grey;
-		}
-		
-		.acordiones{
-			position: relative;
-			margin-top: -2rem;
-			text-align: center;
 			
-			.ui-accordion-header{
-				@include btn_white;
-			}
-			
-			.ui-state-active{
-				@include btn_white_active;
-			}
-			
-			.ui-accordion-content{
-				text-align: left;
-				border: 2px solid $color_green;
-				padding: 1rem;
+			h2{
+				@include font_universal (
+					$font_family_line_height: 22px ,
+					$font_family_weight: 300,
+					$font_family_size: 20px,
+					$font_family_color: $color_text,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_acherus_black
+				);
 			}
 			
 		}

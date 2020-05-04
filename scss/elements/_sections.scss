@@ -4,4 +4,9 @@
 section{
 	@include max-width;
 	margin: 4rem auto;
+	
+	@media (max-width: $breakpoint_1){
+		padding: 0 3rem;
+	}
+	
 }

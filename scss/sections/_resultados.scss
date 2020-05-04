@@ -7,6 +7,10 @@
 	@include display-grid;
 	@include grid-parent-2-columns (1fr, 1fr);
 	
+	@media (max-width: $breakpoint_3_1){
+		@include grid-parent-1-columns (1fr);
+	}
+	
 	div{
 		text-align: center;
 		position: relative;

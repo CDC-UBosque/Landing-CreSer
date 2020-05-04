@@ -3,12 +3,21 @@
 
 
 .convocatoria{
-	margin-top: 9rem;
+	margin-top: 4rem;
 	
 	div{
 		position: relative;
 		padding: 2rem 5rem;
 		background: $color_lime;
+		
+		@media (max-width: $breakpoint_1){
+			padding: 2rem;
+		}
+		
+		@media (max-width: $breakpoint_1){
+			padding: 2rem 2rem 0;
+			text-align: center;
+		}
 		
 		h3{
 			margin-left: 1rem;
@@ -19,6 +28,23 @@
 			max-width: 350px;
 			bottom: 0;
 			right: 10%;
+			
+			@media (max-width: $breakpoint_1){
+				right: 2%;
+			}
+			
+			@media (max-width: $breakpoint_2){
+				max-width: 250px;
+			}
+			
+			@media (max-width: $breakpoint_3){
+				position: relative;
+				max-width: 350px;
+				margin: 2rem auto 0;
+				right: initial;
+				bottom: initial;
+			}
+		
 		}
 		
 	}

@@ -6,6 +6,10 @@ header{
 	background: $color_green;
 	max-height: 700px;
 	
+	@media (max-width: $breakpoint_3){
+		max-height: 600px;
+	}
+	
 	.content{
 		@include max-width;
 		@include display-grid;
@@ -72,9 +76,26 @@ header{
 			margin-top: 3rem;
 			@include grid-child-column (1, 4);
 			@include grid-child-row (2, 4); 
+			
+			@media (max-width: $breakpoint_2){
+				right: 0rem;
+			}
+			
+			@media (max-width: $breakpoint_4){
+				right: 1rem;
+			}
+			
+			@media (max-width: $breakpoint_5){
+				display: none;
+			}
+			
 			img{
 				max-width: 330px;
+				@media (max-width: $breakpoint_2){
+					max-width: 250px;
+				}
 			}
+			
 		}
 		
 		&:nth-child(3){
@@ -84,6 +105,9 @@ header{
 			@include grid-child-row (2, 3); 
 			img{
 				max-width: 289px;
+				@media (max-width: $breakpoint_3){
+					max-width: 200px;
+				}
 			}
 			a{
 				@include btn_dark_green;
@@ -96,9 +120,16 @@ header{
 			left: -3rem;
 			@include grid-child-column (5, 9);
 			@include grid-child-row (3, 5); 
+			
 			img{
 				max-width: 300px;
+				
+				@media (max-width: $breakpoint_2){
+					max-width: 250px;
+				}
+				
 			}
+			
 		}
 		
 		&:nth-child(5){
@@ -108,8 +139,29 @@ header{
 			left: -3rem;
 			@include grid-child-column (10, 13);
 			@include grid-child-row (2, 4); 
+			
+			
+			@media (max-width: $breakpoint_2){
+				left: 0rem;
+			}
+			
+			@media (max-width: $breakpoint_3){
+				left: 2rem;
+			}
+			
+			@media (max-width: $breakpoint_4){
+				left: 4rem;
+			}
+			
+			@media (max-width: $breakpoint_5){
+				display: none;
+			}
+			
 			img{
 				max-width: 400px;
+				@media (max-width: $breakpoint_2){
+					max-width: 300px;
+				}
 			}
 		}
 		

@@ -9,6 +9,7 @@ html{
 		height: 100%;
 		word-break: break-word;
 		display: block;
+		margin: 0;
 		@include prefix(transition, all 0.3s ease, webkit moz o ms);
 		@include font_universal (
 			$font_family_line_height: 21px,
