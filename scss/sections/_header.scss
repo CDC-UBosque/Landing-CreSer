@@ -11,6 +11,7 @@ header{
 	}
 	
 	.content{
+		position: relative;
 		@include max-width;
 		@include display-grid;
 		@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
@@ -165,6 +166,35 @@ header{
 			}
 		}
 		
+	}
+	
+	.vigilada{
+		position: absolute;
+		right: 0%;
+		bottom: 15rem;
+		transform: rotate(-90deg);
+		@include font_universal (
+			$font_family_line_height: 11px,
+			$font_family_weight: 300,
+			$font_family_size: 10px,
+			$font_family_color: $color-brand-white,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_light
+		);
+		
+		@media (max-width: $breakpoint_2){
+			bottom: 8rem;
+		}
+		
+		@media (max-width: $breakpoint_3){
+			right: -2rem;
+			bottom: 12rem;
+		}
+		
+		@media (max-width: $breakpoint_4){
+			bottom: 14rem;
+		}
+			
 	}
 	
 }
