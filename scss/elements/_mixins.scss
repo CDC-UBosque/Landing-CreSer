@@ -267,6 +267,7 @@ $font_family_group: $family) {
 	border-radius: 5rem;
 	padding: 0.6rem 1rem;
 	margin: 1rem;
+	cursor: pointer;
 	@include font_universal (
 		$font_family_line_height: 26px,
 		$font_family_weight: 300,
@@ -293,6 +294,7 @@ $font_family_group: $family) {
 	border-radius: 5rem;
 	padding: 0.6rem 2.5rem 0.6rem 1rem;
 	margin: 1rem;
+	cursor: pointer;
 	@include font_universal (
 		$font_family_line_height: 19px,
 		$font_family_weight: 300,
@@ -328,6 +330,7 @@ $font_family_group: $family) {
 	border-radius: 5rem;
 	padding: 0.6rem 2.5rem 0.6rem 1rem;
 	margin: 1rem;
+	cursor: pointer;
 	@include font_universal (
 		$font_family_line_height: 19px,
 		$font_family_weight: 300,
@@ -360,6 +363,7 @@ $font_family_group: $family) {
 	border-radius: 5rem;
 	padding: 0.6rem 2rem;
 	margin: 0 1rem;
+	cursor: pointer;
 	@include font_universal (
 		$font_family_line_height: 26px,
 		$font_family_weight: 300,
@@ -383,6 +387,7 @@ $font_family_group: $family) {
 	border-radius: 5rem;
 	padding: 0.6rem 1.5rem;
 	margin: 1rem;
+	cursor: pointer;
 	@include font_universal (
 		$font_family_line_height: 19px,
 		$font_family_weight: 300,
@@ -406,6 +411,7 @@ $font_family_group: $family) {
 	border-radius: 5rem;
 	padding: 0.6rem 1.5rem;
 	margin: 1rem;
+	cursor: pointer;
 	@include font_universal (
 		$font_family_line_height: 19px,
 		$font_family_weight: 300,

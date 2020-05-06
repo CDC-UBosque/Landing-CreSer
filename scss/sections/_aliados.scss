@@ -7,10 +7,10 @@
 	div{
 		grid-gap: 1rem;
 		@include display-grid;
-		@include grid-parent-4-columns (1fr, 1fr, 1fr, 1fr);
+		@include grid-parent-6-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
 		
 		@media (max-width: $breakpoint_3){
-			@include grid-parent-2-columns (1fr, 1fr);
+			@include grid-parent-3-columns (1fr, 1fr, 1fr);
 		}
 		
 		@media (max-width: $breakpoint_4){
