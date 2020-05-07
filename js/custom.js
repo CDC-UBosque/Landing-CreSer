@@ -348,5 +348,19 @@
 	});
 	
 	
+	// -------------
+	// donar
+	
+	$(".btn_donar a").click(function() {
+		$(".btn_donar a").toggleClass("open");
+		$(".donar .resultados_donar").toggleClass("open");
+	});
+	
+	$(".resultados_donar .close-button").click(function() {
+		$(".btn_donar a").toggleClass("open");
+		$(".donar .resultados_donar").toggleClass("open");
+	});
+	
+	
 	
 })(jQuery);

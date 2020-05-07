@@ -285,6 +285,30 @@ $font_family_group: $family) {
 	}
 }
 
+@mixin btn_dark_green_active{
+	background: $color-brand-white;
+	border: 2px solid $color_green_dark;
+	border-radius: 5rem;
+	padding: 0.6rem 1rem;
+	margin: 1rem;
+	cursor: pointer;
+	@include font_universal (
+		$font_family_line_height: 26px,
+		$font_family_weight: 300,
+		$font_family_size: 18px,
+		$font_family_color: $color_green_dark,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_bold
+	);
+	&:after{
+		display: none;
+	}
+	&:hover{
+		background: $color_green_dark;
+		color: $color-brand-white;
+	}
+}
+
 @mixin btn_white{
 	background: $color-brand-white url('../images/svg/arrow.svg');
 	background-size: 1rem;
