@@ -347,6 +347,19 @@
 		$(".qas .qa13").toggleClass("open");
 	});
 	
+	// -------------
+	// qas 14
+	
+	$(".qas .qa14").click(function() {
+		$(".resultados_qa14").toggleClass("open");
+		$(".qas .qa14").toggleClass("open");
+	});
+	
+	$(".resultados_qa14 .close-button").click(function() {
+		$(".resultados_qa14").toggleClass("open");
+		$(".qas .qa14").toggleClass("open");
+	});
+	
 	
 	// -------------
 	// donar
@@ -359,6 +372,32 @@
 	$(".resultados_donar .close-button").click(function() {
 		$(".btn_donar a").toggleClass("open");
 		$(".donar .resultados_donar").toggleClass("open");
+	});
+	
+	// -------------
+	// educacion calidad
+	
+	$(".btn_ODS .logo_ODS").click(function() {
+		$(".btn_ODS .logo_ODS").toggleClass("open");
+		$(".donar .resultados_ODS").toggleClass("open");
+	});
+	
+	$(".resultados_ODS .close-button").click(function() {
+		$(".btn_ODS .logo_ODS").toggleClass("open");
+		$(".donar .resultados_ODS").toggleClass("open");
+	});
+	
+	// -------------
+	// aliados
+	
+	$(".btn_aliados a").click(function() {
+		$(".btn_aliados a").toggleClass("open");
+		$(".aliados .resultados_aliados").toggleClass("open");
+	});
+	
+	$(".resultados_aliados .close-button").click(function() {
+		$(".btn_aliados a").toggleClass("open");
+		$(".aliados .resultados_aliados").toggleClass("open");
 	});
 	
 	
