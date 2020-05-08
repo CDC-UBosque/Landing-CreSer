@@ -14,69 +14,6 @@
 		@include grid-parent-1-columns (1fr);
 	}
 	
-	.btn_ODS{
-		position: relative;
-		@include grid-child-column (1, 2);
-		@include grid-child-row (1, 2); 
-		
-		@media (max-width: $breakpoint_4){
-			justify-self: center;
-		}
-		
-		img{
-			cursor: pointer;
-			max-width: 11rem;
-			
-			@media (max-width: $breakpoint_3){
-				max-width: 8rem;
-			}
-			
-			&:hover{
-				opacity: .7;
-			}
-			
-		}
-		
-		.resultados_ODS{
-			display: none;
-			position: absolute;
-			border: 2px solid $color_green;
-			background: $color_light_grey;
-			z-index: 10;
-			margin: 1rem auto;
-			padding: 0 1rem;
-			z-index: 10;
-			max-width: 40rem;
-			box-shadow: 0px 0px 0px 10px #fff;
-			
-			@media (max-width: $breakpoint_4){
-				width: 210px;
-				left: -45%;
-			}
-			
-			.close-button{
-				position: absolute;
-				top: -1rem;
-				right: -1rem;
-				&:hover{
-					opacity: .5;
-				}
-			}
-			
-			p{
-				top:initial;
-				margin: 1rem;
-				text-align: left;
-			}
-			
-		}
-		
-		.resultados_ODS.open{
-			display: block;
-		}
-		
-	}
-	
 	.btn_donar{
 		position: relative;
 		text-align: right;

@@ -21,6 +21,11 @@
 			align-self: center;
 			justify-self: center;
 			
+			@media (max-width: $breakpoint_4){
+				max-width: 70%;
+				margin: auto;
+			}
+			
 			&:nth-child(1){
 				width: 340px;
 			}
@@ -85,6 +90,55 @@
 		}
 		
 		.resutltados.open{
+			display: block;
+		}
+		
+	}
+	
+	.btn_ODS{
+		position: relative;
+		
+		img{
+			cursor: pointer;
+			max-width: 11rem;
+			margin: auto;
+			
+			&:hover{
+				opacity: .7;
+			}
+			
+		}
+		
+		.resultados_ODS{
+			display: none;
+			position: relative;
+			border: 2px solid $color_green;
+			background: $color_light_grey;
+			z-index: 10;
+			margin: 1rem auto;
+			padding: 0 1rem;
+			z-index: 10;
+			max-width: 40rem;
+			box-shadow: 0px 0px 0px 10px #fff;
+			
+			.close-button{
+				position: absolute;
+				top: -1rem;
+				right: -1rem;
+				&:hover{
+					opacity: .5;
+				}
+			}
+			
+			p{
+				top:initial;
+				margin: 1rem;
+				text-align: left;
+			}
+			
+		}
+		
+		.resultados_ODS.open{
 			display: block;
 		}
 		

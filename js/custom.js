@@ -379,12 +379,12 @@
 	
 	$(".btn_ODS .logo_ODS").click(function() {
 		$(".btn_ODS .logo_ODS").toggleClass("open");
-		$(".donar .resultados_ODS").toggleClass("open");
+		$(".aliados .resultados_ODS").toggleClass("open");
 	});
 	
 	$(".resultados_ODS .close-button").click(function() {
 		$(".btn_ODS .logo_ODS").toggleClass("open");
-		$(".donar .resultados_ODS").toggleClass("open");
+		$(".aliados .resultados_ODS").toggleClass("open");
 	});
 	
 	// -------------
