@@ -3,6 +3,7 @@
 
 
 .aliados{
+	margin-bottom: 0;
 	
 	.img_aliados{
 		grid-gap: 1rem;
@@ -100,7 +101,7 @@
 		
 		img{
 			cursor: pointer;
-			max-width: 11rem;
+			max-width: 6rem;
 			margin: auto;
 			
 			&:hover{
