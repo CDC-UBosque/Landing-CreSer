@@ -401,5 +401,13 @@
 	});
 	
 	
+	// -------------
+	// pop up inicial
+	
+	$(".popup-enter .close-button").click(function() {
+		$(".popup-enter").toggleClass("close");
+	});
+	
+	
 	
 })(jQuery);
