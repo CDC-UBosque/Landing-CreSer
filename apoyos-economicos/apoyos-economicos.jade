@@ -1,0 +1,314 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Programa CreSer
+
+//- Content page
+block content
+
+	header
+		div.content
+			nav
+				ul
+					li
+						a(href='https://www.unbosque.edu.co' target='_blank'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
+					li
+						a.txt Apoyos económicos
+						
+			
+			div
+				img(src="images/photos/estudiante.png" alt="Estudiante")
+			div
+				img(src="images/svg/programa-creser.svg" alt="Programa CreSer")
+				a(href='#becas') Conoce más
+			div
+				img(src="images/photos/monedas.png" alt="Apoyo")
+			div
+				img(src="images/photos/profesional.png" alt="Profesional")
+				
+			div.vigilada
+				span Vigilada Mineducación
+				
+	
+	section.donar
+				
+		div.btn_donar
+			a Dona aquí
+			div.resutltados.resultados_donar
+				img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+				p Pronto podrás donar por este medio al Fondo de Becas de la Universidad El Bosque y así ayudar a jóvenes colombianos a cumplir su sueño de la educación superior.
+			
+	
+	section.becas#becas
+		h1 Becas abiertas
+		//- h5 *Para las Facultades de Ingeniería y Creación y Comunicación
+		
+		div.cards-content
+			div.cards
+				img(src="images/photos/excelencia-academica.png" alt="Excelencia académica")
+				div.box
+					h2 Excelencia académica - Permanencia
+					p Mejor promedio de cada programa y que se encuentre cursando desde el primer hasta el último semestre, en los programas de pregrado. Estas becas se adjudica con el reporte que notifica cada Unidad Académica del mejor promedio de toda la carrera. No se aplica de manera directa por los estudiantes.
+				div.acordion1.accordions.mobile
+					a Más Información
+					+acordion-1
+								
+			div.cards
+				img(src="images/photos/grupos-especiales.png" alt="Grupos especiales")
+				div.box
+					h2 Grupos especiales
+					p Dirigida a estudiantes que pertenezcan a poblaciones especiales (etnias) que sean admitidos en los diferentes programas de pregrado.
+				div.acordion2.accordions.mobile
+					a Más Información
+					+acordion-2
+						
+			div.cards
+				img(src="images/photos/merito-academico.png" alt="Merito académico")
+				div.box
+					h2 Mérito Académico y necesidad socio - económica
+					p Este apoyo ha sido otorgado de manera automática a todos los estudiantes de pregrado de la Universidad El Bosque por el 15% para el Periodo 2020-II.
+				//- div.acordion3.accordions.mobile
+					a Más Información
+					+acordion-3
+						
+							
+		
+		div.acordion_desktop
+			+acordion-1
+			+acordion-2
+			+acordion-3
+			
+		
+		div.cards-content
+			div.cards
+				img(src="images/photos/programa-semillas.png" alt="Programa semillas")
+				div.box
+					h2 Programa Semillas
+					p Buscamos formar grandes profesionales y dar apoyo económico a estudiantes de escasos recursos con un alto rendimiento académico, beneficiando su calidad de vida a través de su formación de pregrado y del entorno universitario que ofrece nuestra institución.
+				div.acordion4.accordions.mobile
+					a Más Información
+					+acordion-4
+								
+			div.cards
+				img(src="images/photos/enocnomia-naranja.png" alt="Economáa naranja")
+				div.box
+					h2 Economía Naranja Banco de Bogotá
+					p Buscamos apoyar las carreras en el marco de las industrias creativas y la cultura como un motor de desarrollo para el país. Aplica sólo para las Facultades de Ingeniería y Creación y Comunicación.
+				div.acordion5.accordions.mobile
+					a Más Información
+					+acordion-5
+						
+			div.cards
+				img(src="images/photos/fundacion-bolivar.png" alt="Fundación bolivar")
+				div.box
+					h2 Próximamente: Becas al Talento - Fundación Bolivar Davivienda
+					p Para evitar la deserción de jóvenes destacados por su desempeño académico en la vida universitaria, la Fundación Bolívar Davivienda ha creado el programa Becas Crédito por la Excelencia, que está dirigido a estudiantes de pregrado con altas calificaciones, que se encuentren cursando entre 5to y 8vo semestre, y que estén atravesando por dificultades económicas que les impidan la continuidad de su proceso formativo.
+				div.acordion6.accordions.mobile
+					a Más Información
+					+acordion-6
+				
+		
+		div.acordion_desktop
+			+acordion-4
+			+acordion-5
+			+acordion-6
+			
+		
+	section.convocatoria
+		div
+			h2 Convocatoria
+			h3 Fecha de Apertura: 18 mayo 2020
+			h3 Fecha de Cierre: 19 junio 2020
+			img(src="images/photos/convocatoria.png" alt="convocatoria")
+			
+	
+	section.interesar
+		h1 Te puede interesar
+		div.video
+			div.embed-container
+				<iframe src="https://www.youtube.com/embed/lZSs6pogoPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			
+	section.requisitos
+		div.image
+			img(src="images/photos/requisitos.png" alt="requisitos")
+		div.txt
+			h1 Requisitos Generales
+			ul
+				li Promedio acumulado mínimo 3.8
+				li No ser beneficiario de otra beca.
+				li No haber perdido asignaturas.
+				li Matricular todos los créditos.
+				li Estar a paz y salvo con la Universidad.
+				li No presentar fallas disciplinarias.
+				li En caso de ser otorgada alguna de las becas se debe cumplir con el programa de compensación de horas.
+				li Los beneficios económicos otorgados no son acumulables.
+				li Verificar requisitos específicos de cada beca Acuerdo 14608 2017.
+				
+				
+	section.aplicar
+		div
+			h1 Aplica a través del siguiente formulario
+			a(href="https://forms.gle/iGotn6yUAHwn1L2U7" target="_blank") Aplicar
+			
+			
+	section.resultados
+		div.resultados_convocatoria
+			h3 Resultados convocatoria 2020 -2
+			a Consultar
+			div.resultados_consultar
+				img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+				p Aquí podrás consultar si has sido elegido como beneficiario de alguno de nuestros Apoyos Económicos. Los resultados para el periodo 2020-2 serán publicados el 10 de julio del 2020
+				
+		div.otras_becas
+			h3 Para otras Becas: Acuerdo 14608 de 2017
+			a(href="pdf/politica-de-becas-universidad-el-bosque.pdf" target="_blank") Consultar
+			
+			
+	section.qa
+		h1 Preguntas Frecuentes
+		div.content_qa
+			div.qas
+				p ¿Puedo aplicar a varios apoyos económicos? 
+				a.qa1
+				div.resutltados.resultados_qa1
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p No, debes elegir el que más se ajuste a tu situación. Te recomendamos leer el Acuerdo 14608 para más información
+					
+			div.qas
+				p ¿Son acumulables los descuentos?  
+				a.qa2 
+				div.resutltados.resultados_qa2
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p No, solo se podrá aplicar un descuento. 
+					
+			div.qas
+				p Si he perdido alguna materia en semestres anteriores, ¿puedo aplicar? 
+				a.qa3 
+				div.resutltados.resultados_qa3
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Desde la Universidad buscamos que el programa de Apoyos Económicos beneficie a los estudiantes excelentes, por este motivo, no pueden aplicar aquellos estudiantes que hayan perdido una materia anteriormente.
+					
+			div.qas
+				p ¿Debo participar en el programa de compensación de horas? 
+				a.qa4 
+				div.resutltados.resultados_qa4
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Si, todos los estudiantes que reciban algún apoyo económico deberán participar en el Programa de Compensación coordinado por la Dirección de Bienestar Universitario a excepción de los Tutores Pares de Éxito Estudiantil.
+					
+			div.qas
+				p ¿Es mi apoyo económico renovable? 
+				a.qa5 
+				div.resutltados.resultados_qa5
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Depende de los requisitos específicos del apoyo solicitado, te recomendamos leer el Acuerdo 14608 para más información.
+					
+			div.qas
+				p ¿Debo mantener siempre los requisitos iniciales? 
+				a.qa6 
+				div.resutltados.resultados_qa6
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Si, de lo contrario, el Apoyo Económico será revocado
+					
+					
+			div.qas
+				p ¿Es para toda la carrera mi apoyo económico?
+				a.qa7 
+				div.resutltados.resultados_qa7
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Depende de los requisitos específicos del apoyo solicitado, te recomendamos leer el Acuerdo 14608 para más información.
+					
+			div.qas
+				p ¿Puedo presentarme después de la fecha estipulada? 
+				a.qa8 
+				div.resutltados.resultados_qa8
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p No, la recepción de solicitudes será cerrada en la fecha estipulada y no se aceptarán más solicitudes.
+					
+					
+			div.qas
+				p ¿Qué pasa si no adjuntos todos los soportes? 
+				a.qa9 
+				div.resutltados.resultados_qa9
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Es importante tener en cuenta que recibimos muchas solicitudes. Cada caso es importante para nosotros y los evaluamos detalladamente, por esto, te recomendamos adjuntar todos los documentos ya que estos juegan un papel determinante en la selección. 
+					
+					
+			div.qas
+				p ¿Dónde encuentro el Formulario de Solicitud?  
+				a.qa10
+				div.resutltados.resultados_qa10
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Puedes aplicar en el siguiente link  <a href="https://forms.gle/iGotn6yUAHwn1L2U7" target="_blank">https://forms.gle/iGotn6yUAHwn1L2U7</a>
+					
+					
+			div.qas
+				p ¿Cómo podré conocer los resultados finales? 
+				a.qa11
+				div.resutltados.resultados_qa11
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Tras la finalización del periodo de postulación, el Comité de Becas se reunirá. Tan pronto como tengamos los resultados, los podrás consultar por esta página web y recibirás un correo electrónico.
+					
+					
+			div.qas
+				p Qué pasa una vez diligenciado el formulario? 
+				a.qa12
+				div.resutltados.resultados_qa12
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Una vez lo hayas enviado, te llegará una copia a tu email, así tendrás un soporte de tus respuestas. Por favor, no elimines este correo electrónico. 
+					
+					
+			div.qas
+				p ¿A donde me puedo comunicar en caso de tener más preguntas? 
+				a.qa13
+				div.resutltados.resultados_qa13
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Podrás comunicarte al correo electrónico <a href="mailto:apoyoseconomicos@unbosque.edu.co" target="_blank">apoyoseconomicos@unbosque.edu.co</a> y a las extensiones 1910 y 1124. 
+					
+			div.qas
+				p ¿Qué documentos debo tener escaneados para adjuntar a mi solicitud?
+				a.qa14
+				div.resutltados.resultados_qa14
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Deberás adjuntar en 1 sólo archivo en formato PDF, los siguientes documentos soporte, para el estudio de tu solicitud:
+					ul
+						li Certificados de ingresos o constancia laboral (con un tiempo de expedición no mayor a un mes) de los padres o persona de quien depende económicamente el estudiante
+						li Certificado acumulado de notas
+						li Recibo de servicio público del lugar de residencia
+						li Otros documentos en caso que aplique como: certificados de defunción, certificados de enfermedad o discapacidad, declaración de insolvencia económica, Certificado Ministerio del Interior - Minorías, Certificados de Dependencia Económica, u otros que consideres. 
+					p Recuerda que para evaluar de manera adecuada tu postulación, debemos contar con todos los soportes necesarios, de lo contrario, es posible que esta no sea aprobada. 
+
+			
+			
+	section.aliados
+		h1 Aliados estratégicos
+		div.img_aliados
+			img(src="images/photos/logo-banco-bogota.png" alt="Banco de bogotá")
+			img(src="images/photos/fundacion-bolivar-davivienda.png" alt="Fundación bolivar davivienda")
+			img(src="images/photos/fundacion-tomas-rueda.png" alt="Fundación tomas rueda")
+			img(src="images/photos/parqueaderos-tequendama.png" alt="Parqueaderos tequendama")
+			img(src="images/photos/logo-turistren.jpg" alt="Turistren")
+			img(src="images/photos/logo-totto.jpg" alt="Totto")
+			
+		div.btn_aliados
+			a Quiero Ser Aliado Estratégico
+			div.resutltados.resultados_aliados
+				img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+				p Juntos podemos aportar al acceso a la Educación Superior de Calidad. Al convertirte en uno de nuestros Aliados Estratégico tus colaboradores sus cónyuges e hijos podrán acceder a un beneficio del 10% para pregrados, posgrados y educación continuada. Si estas interesado, has clic en el siguiente enlance <a href="https://forms.gle/1JxzP4JqKpbM83p5A" target="_blank">https://forms.gle/1JxzP4JqKpbM83p5A.</a> No aplica para: Medicina, química farmacéutica, y posgrados médico-quirúrgicos. 
+				
+		div.btn_ODS
+			img.logo_ODS(src="images/photos/educacion-calidad.png" alt="Educación de calidad")
+			div.resutltados.resultados_ODS
+				img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+				p Aportamos al desarrollo inclusivo del país a través de la Educación de Calidad con nuestros 33,344 egresados y nuestros 12,741 estudiantes de pregrados y posgrados.
+			
+			
+	footer
+		hr
+		p <b>Mayor información: <a href="mailto:apoyoseconomicos@unbosque.edu.co" target="_blank">apoyoseconomicos@unbosque.edu.co</a> <br/> Extensiones 1910 - 1124</b>
+	
+	
+	
+	
+	
