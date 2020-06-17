@@ -3,7 +3,7 @@
 
 
 .convocatoria{
-	margin-top: 4rem;
+	margin-top: 8rem;
 	
 	div{
 		position: relative;
@@ -43,6 +43,10 @@
 				margin: 2rem auto 0;
 				right: initial;
 				bottom: initial;
+			}
+			
+			@media (max-width: $breakpoint_4){
+				max-width: 200px;
 			}
 		
 		}

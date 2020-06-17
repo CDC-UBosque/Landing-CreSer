@@ -1,0 +1,107 @@
+/* ---------------------------------- banner opciones financiación -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+.banner_opciones_financiacion{
+	margin-top: 15rem;
+	
+	@media (max-width: $breakpoint_2){
+		margin-top: 5rem;
+	}
+	
+	.banner_opciones{
+		position: relative;
+		text-align: center;
+		padding: 0rem;
+		background: $color_green_dark;
+		@include display-grid;
+		@include grid-parent-3-columns (1fr, 3fr, 1fr);
+		
+		@media (max-width: $breakpoint_2){
+			@include grid-parent-2-columns (1fr, 3fr);
+		}
+		
+		@media (max-width: $breakpoint_3_1){
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		img{
+			position: absolute;
+			max-width: 23%;
+			height: auto;
+			bottom: 0;
+			left: 2rem;
+			
+			@media (max-width: $breakpoint_2){
+				max-width: 30%;
+			}
+			
+			@media (max-width: $breakpoint_3_1){
+				position: relative;
+				max-width: 270px;
+				margin: auto;
+				left: initial;
+				@include grid-child-column (1, 2);
+				@include grid-child-row (3, 4); 
+			}
+			
+		}
+		
+		h1{
+			margin: 2rem 0 2rem 4rem;
+			display: inline-block;
+			text-align: left;
+			color: $color-brand-white;
+			@include grid-child-column (2, 3);
+			@include grid-child-row (1, 2); 
+			
+			@media (max-width: $breakpoint_3_1){
+				margin: 2rem;
+				@include grid-child-column (1, 2);
+				@include grid-child-row (1, 2); 
+			}
+			
+			&:after{
+				display: none;
+			}
+			
+		}
+		
+		a{
+			top: -0.3rem;
+			display: inline-block;
+			place-self: center;
+			@include btn_lime;
+			@include grid-child-column (3, 4);
+			@include grid-child-row (1, 2); 
+			
+			@media (max-width: $breakpoint_2){
+				place-self: start;
+				margin-left: 4rem;
+				margin-bottom: 2rem;
+				@include grid-child-column (2, 3);
+				@include grid-child-row (2, 3); 
+			}
+			
+			@media (max-width: $breakpoint_3_1){
+				margin: 2rem;
+				place-self: center;
+				@include grid-child-column (1, 2);
+				@include grid-child-row (2, 3); 
+			}
+			
+		}
+	
+	}
+	
+	.info_contact{
+		border: 3px solid $color_green_dark;
+		padding: 0 1rem;
+		text-align: center;
+	}
+	
+}
+
+
+
+

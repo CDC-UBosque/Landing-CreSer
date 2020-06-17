@@ -5,10 +5,16 @@
 .aliados{
 	margin-bottom: 0;
 	
+	>p{
+		margin: 1rem auto 3rem;
+	}
+	
 	.img_aliados{
-		grid-gap: 1rem;
+		grid-gap: 2rem;
+		@include max-width-p;
+		margin: auto;
 		@include display-grid;
-		@include grid-parent-6-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+		@include grid-parent-3-columns (1fr, 1fr, 1fr);
 		
 		@media (max-width: $breakpoint_3){
 			@include grid-parent-3-columns (1fr, 1fr, 1fr);

@@ -1,4 +1,32 @@
 //- ----------------------------
+//- ---------------------------- pop up enter ------------------------------- //
+//- ----------------------------
+
+mixin pop-up-enter
+	div.popup-enter
+		div.resutltados.resultados_popup_enter
+			img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+			p Te informamos que debido a la coyuntura del COVID-19 y al beneficio del 15% para estudiantes antiguos de pregrado y del 10% para nuevos estudiantes (a excepción de medicina y postgrados medicoquirúrgicos), para el periodo 2020-II ponemos a tu disposición las convocatorias a las siguientes Becas, Apoyos Económicos y Opciones de Financiación:
+			ul
+				li Excelencia Académica
+				ul
+					li Acceso Prueba Saber 11
+					li Permanencia
+					li Graduandos
+					li Beca de Honor
+				li Grupos Especiales
+				li Gobernación de Cundinamarca 4x1 opción de vida
+				li Alianza Bogotá Ciudad Educadora
+				li Programa Semillas
+				li Becas al Talento – Fundación Bolívar Davivienda
+				li Economía Naranja – Banco de Bogotá
+				li Especialización en Docencia Universitaria - Egresados
+				li Programa todos en el Aula - Lumni
+				li Pichincha Credyty
+				li ICETEX
+			p Te invitamos a conocer los requisitos específicos y generales para el acceso. Recuerda, los beneficios nos son acumulables ni reembolsables. Los resultados para el periodo 2020-2 serán publicados el 10 de julio del 2020
+
+//- ----------------------------
 //- ---------------------------- header menu ------------------------------- //
 //- ----------------------------
 
@@ -8,9 +36,17 @@ mixin header-home
 			nav
 				ul
 					li
-						a(href='https://www.unbosque.edu.co' target='_blank'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
+						a(href='../../'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
+					
+				ul
 					li
-						a.txt(href='') Apoyos económicos
+						a.txt(href='../../apoyos-economicos.html') Apoyos económicos
+					li
+						a.txt(href='../../opciones-de-financiacion.html') Opciones de financiación
+					li
+						a.txt(href='../../preguntas-frecuentes.html') Preguntas frecuentes
+					li
+						a.txt(href='../../aliados-estrategicos.html') Aliados estratégicos
 						
 			
 			div
@@ -28,31 +64,48 @@ mixin header-home
 				
 				
 
-mixin header-pages
-	header
+mixin header-pages(urlimg, alttext, textobanner)
+	header.pages
 		div.content
 			nav
 				ul
 					li
-						a(href='https://www.unbosque.edu.co' target='_blank'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
+						a(href='../../'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
+				ul
 					li
-						a.txt Apoyos económicos
+						a.txt(href='../../apoyos-economicos.html') Apoyos económicos
+					li
+						a.txt(href='../../opciones-de-financiacion.html') Opciones de financiación
+					li
+						a.txt(href='../../preguntas-frecuentes.html') Preguntas frecuentes
+					li
+						a.txt(href='../../aliados-estrategicos.html') Aliados estratégicos
 						
 			
 			div
-				img(src="images/photos/estudiante.png" alt="Estudiante")
+				img(src=urlimg alt=alttext)
 			div
 				img(src="images/svg/programa-creser.svg" alt="Programa CreSer")
-				a(href='#becas') Conoce más
-			div
-				img(src="images/photos/monedas.png" alt="Apoyo")
-			div
-				img(src="images/photos/profesional.png" alt="Profesional")
+				h1= textobanner
+			
+			div.btn_donacion
+				+btn-donar
 				
 			div.vigilada
 				span Vigilada Mineducación
 
 
+
+
+//- ----------------------------
+//- ---------------------------- btn donar aqui ------------------------------- //
+//- ----------------------------
+mixin btn-donar
+	div.btn_donar
+		a Dona aquí
+		div.resutltados.resultados_donar
+			img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+			p Pronto podrás donar por este medio al Fondo de Becas de la Universidad El Bosque y así ayudar a jóvenes colombianos a cumplir su sueño de la educación superior.
 
 //- ----------------------------
 //- ---------------------------- Acordiones ------------------------------- //
@@ -62,7 +115,7 @@ mixin acordion-1
 	div.content-acordion.content_accordion_1
 		img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
 		h3 Becas de excelencia académica - Permanencia.
-		p Se adjudicará beca condonable no renovable hasta por el 50% del valor de la matrícula para el siguiente período académico, al estudiante que obtenga el mejor promedio de cada programa y que se encuentre cursando desde el primer hasta el último semestre, en los programas de pregrado. 
+		p Se adjudicará beca condonable no renovable hasta por el 50% del valor de la matrícula para el siguiente período académico, al estudiante que obtenga el mejor promedio de cada programa y que se encuentre cursando desde el primer hasta el último semestre, en los programas de pregrado.
 		p En caso de encontrar dos o más estudiantes con igual promedio semestral del mismo programa, se escogerá al estudiante con mejor promedio ponderado de toda la carrera y en el caso de encontrar dos o más estudiantes con igual promedio ponderado, el beneficio se otorgará proporcionalmente entre los opcionados.
 		p Podrá ser candidato y beneficiarse de esta beca el estudiante que cumpla con los siguientes requisitos generales:
 		ul
@@ -79,25 +132,12 @@ mixin acordion-1
 mixin acordion-2
 	div.content-acordion.content_accordion_2
 		img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
-		h3 Becas para grupos especiales - Becas para el postconflicto.
-		p Beca condonable y renovable hasta el 90% del valor de la matrícula, para facilitar el ingreso y permanencia para estudiantes que hayan finalizado la ruta de la reintegración de forma exitosa, personas provenientes del programa de víctimas del gobierno nacional, a los huérfanos del ICBF y/o a ex miembros de la fuerza pública en situación de discapacidad, a sus familias, y a las viudas y huérfanos de la nación.
-		p Estas becas serán otorgadas en alianza con entes gubernamentales y/u ONG's que además apoyen en la búsqueda de los beneficiarios y aseguren la idoneidad de sus perfiles.
-		
-		h3 Requisitos específicos
-		ul
-			li Además de cumplir con los requisitos académicos establecidos por la Universidad para su admisión, deberá acreditar su condición mediante certificación expedida por autoridad competente. 
-			li Aplicar y adjuntar documentos en el siguiente link <a href="https://forms.gle/iGotn6yUAHwn1L2U7" target="_blank">https://forms.gle/iGotn6yUAHwn1L2U7</a>
-			li Queda a juicio del Comité de Becas y Estímulos adjudicar estos estímulos de conformidad con la disponibilidad del presupuesto y para los siguientes semestres del programa académico, se adjudicarán siempre y cuando el rendimiento académico sea superior a 3.8 semestral y no tenga asignaturas perdidas.
-			li Los beneficios se mantendrán a lo largo de la carrera, siempre y cuando el estudiante no pierda el período académico o el cupo, no haya tenido una sanción disciplinaria y haya cumplido con el número de horas de compensación exigido por la Universidad.
-			li No se reciben aplicaciones luego de la fecha de cierre de las convocatorias.
-			li En caso de ser otorgada alguna de las becas se debe cumplir con el programa de compensación de horas.
-			
 		h3 Becas para grupos especiales - Becas para grupos minoritarios.
 		p Beca condonable y renovable hasta el 50% del valor de la matrícula, para facilitar el ingreso y permanencia para estudiantes que pertenezcan a poblaciones especiales (etnias) que sean admitidos en los diferentes programas de pregrado. Estas becas se adjudican por parte del comité de becas y estímulos dependiendo el presupuesto disponible de la Universidad.
 		
-		h3 Requisitos
+		h3 Requisitos específicos
 		ul
-			li Además de cumplir con los requisitos académicos establecidos por la Universidad para  su emisión, deberán acreditar su condición mediante certificación expedida por la autoridad competente. Esta solicitud y los documentos requeridos deben radicarse en el departamento de Finanzas Estudiantiles antes de iniciar el semestre académico.
+			li Además de cumplir con los requisitos académicos establecidos por la Universidad para su emisión, deberán acreditar su condición mediante certificación expedida por la autoridad competente. Esta solicitud y los documentos requeridos deben radicarse en el departamento de Finanzas Estudiantiles antes de iniciar el semestre académico.
 			li Queda a juicio del comité de becas y estímulos adjudicar estos estímulos de conformidad con la disponibilidad del presupuesto y se dará renovación automática a la beca siempre y cuando el promedio académico sea superior a 3.8 y no tenga asignaturas perdidas.
 			li Los beneficios se mantendrán a lo largo de la carrera, siempre y cuando el estudiante no pierda el período académico o el cupo, no haya tenido una sanción disciplinaria y haya cumplido con el número de horas de compensación exigido por la Universidad.
 			li Aplicar y adjuntar documentos en el siguiente link <a href="https://forms.gle/iGotn6yUAHwn1L2U7" target="_blank">https://forms.gle/iGotn6yUAHwn1L2U7</a>
@@ -162,13 +202,14 @@ mixin acordion-5
 			li En caso de ser otorgada alguna de las becas se debe cumplir con el programa de compensación de horas.
 			
 			
+			
 mixin acordion-6
 	div.content-acordion.content_accordion_6
 		img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
 		h3 Becas al Talento – Fundación Bolívar Davivienda
 		
 		ul
-			li Dirigido a estudiantes de pregrado. 
+			li Dirigido a estudiantes de pregrado.
 			li Entre 5to y 8vo semestre.
 			li Promedio superior acumulado a 3.8.
 			li Matricular mínimo el 80% del total de los créditos del semestre.
@@ -184,5 +225,60 @@ mixin acordion-6
 			li Aplicar y adjuntar documentos en el siguiente link <a href="https://forms.gle/iGotn6yUAHwn1L2U7" target="_blank">https://forms.gle/iGotn6yUAHwn1L2U7</a>
 			li No se reciben aplicaciones luego de la fecha de cierre de las convocatorias.
 			li En caso de ser otorgada alguna de las becas se debe cumplir con el programa de compensación de horas.
+			
+			
+			
+mixin acordion-7
+	div.content-acordion.content_accordion_1
+		img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+		h3 Aplica para: 
+		
+		ul
+			li Bellas artes: Arte Dramático, Artes Plásticas, Formación Musical, Diseño Industrial
+			li Económicas: Administración de empresas y Negocios internacionales
+			li Educación: Licenciatura En Educación Infantil y Licenciatura En Bilingüismo Con Énfasis En Enseñanza Ingles
+			li Salud: Enfermería y Odontología
+			li Sociales: Derecho, Ciencia Política, Psicología y Psicología-Nocturna
+			li Ingenierías: Ing. Sistemas Nocturna y Diurna, Ingeniería Electrónica Nocturna y Diurna, Ingeniería Electrónica, Ingeniería Ambiental, Bioingeniería e Ingeniería Industrial
+			li Naturales: Biología
+			
+		h3 Requisitos: 
+		
+		ul
+			li Ser admitido para primer semestre o estar cursando en la Universidad El Bosque una carrera de pregrado que sea financiable a través del Programa.
+			li Presentar un responsable solidario quien también firmará el contrato y pagaré. No deben tener reportes negativos en centrales de riesgo. 
+			li Sustentar necesidad económica, con ingresos familiares menor de 4 SMMLV
+			
+		p Aplica en: <a href="www.lumniportal.net" target="_blank">www.lumniportal.net</a>, selecciona Colombia y el Programa Todos en el Aula, diligencia el formulario completo y realiza la prueba de afinidad vocacional.  
+		p Consulta todo sobre el programa escribiendo al correo: <a href="mailto:gina.garcía@lumni.net" target="_blank">gina.garcía@lumni.net</a>
+		
+		
+		
+mixin acordion-8
+	div.content-acordion.content_accordion_2
+		img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+		
+		ul
+			li Ingresa a <a href="https://pichincha.credyty.com/" target="_blank">https://pichincha.credyty.com/</a>, regístrate y simula tu crédito.
+			li Completa el formulario en línea y acepta los términos y condiciones.
+			li Recibe respuesta inmediata, adjunta tu firma digital y selecciona tus preferencias de pago.
+			li Consulta todo sobre esta opción escribiendo al correo: <a href="mailto:flor.vergara@pichincha.com.co" target="_blank">flor.vergara@pichincha.com.co</a>
+			
+			
+mixin acordion-9
+	div.content-acordion.content_accordion_3
+		img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+		
+		ul
+			li La información de cada una de  las líneas de créditos y la opción para aplicar se encuentra en: <a href="https://portal.icetex.gov.co/Portal/Home/HomeEstudiante/creditos-tu-eliges" target="_blank">https://portal.icetex.gov.co/Portal/Home/HomeEstudiante/creditos-tu-eliges</a>
+			li Consulta mayor  información escribiendo al correo: <a href="mailto:asesorfinanzas3@unbosque.edu.co" target="_blank">asesorfinanzas3@unbosque.edu.co</a>
 	
 	
+//- ----------------------------
+//- ---------------------------- footer ------------------------------- //
+//- ----------------------------
+
+mixin footer
+	footer
+		hr
+		p <b>Mayor información: <a href="mailto:apoyoseconomicos@unbosque.edu.co" target="_blank">apoyoseconomicos@unbosque.edu.co</a> <br/> Extensiones 1910 - 1124</b>

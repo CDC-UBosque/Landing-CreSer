@@ -1,0 +1,98 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Opciones de Financiación
+
+//- Content page
+block content
+
+	+header-pages('../../images/photos/estudiante-opciones-financiacion-banner.png','Opciones de financiación','Opciones de financiación')
+			
+	
+	section.becas.inners
+		h1 Alternativas de financiación
+		p Buscando ayudar a nuestra comunidad universitaria, te presentamos las siguientes opciones de financiación. ¡Queremos ser parte de tu historia!
+		
+		div.cards-content
+			div.cards
+				img(src="../../images/photos/lumni.png" alt="Lumni")
+				div.box
+					h2 Programa Todos en el Aula
+					p Invertimos en nuestros estudiantes y su formación en alianza con Lumni, una opción que te permite financiar tu formación pagando el 20 % del valor de tu matrícula semestral de forma directa con la Universidad y el otro 80 % al finalizar tu educación, en cuotas acordes a los ingresos en tu etapa productiva. Durante tu etapa académica, solo deberás asumir mensualmente la cuota cultura de pago, equivalente a $80.000 pesos. 
+				div.acordion1.accordions.mobile
+					a Más Información
+					+acordion-1
+								
+			div.cards
+				img(src="images/photos/banco-pichincha-credity.png" alt="Banco Pichincha - Credity")
+				div.box
+					h2 Pichincha - Credyty
+					p ¿Necesitas solicitar un crédito para tus estudios por primera vez? Te presentamos la opción Pichincha-Credyty, nuestra mano amiga para hacer de tu financiación un proceso seguro, en línea y con aprobación inmediata, con el que podrás financiar hasta el 100 % de tu matrícula en máximo seis cuotas. 
+				div.acordion2.accordions.mobile
+					a Más Información
+					+acordion-2
+						
+			div.cards
+				img(src="images/photos/icetex.png" alt="Icetex")
+				div.box
+					h2 Icetex
+					p Créditos Tú Eliges (pregrado y posgrado) y Líneas especiales: opciones para que tú escojas el porcentaje del crédito que pagarás mientras estudias, con tasas de interés dependiendo del caso. Podrás financiar hasta el 100 % de la matrícula con diferentes alternativas de pago y acogerte a programas de protección institucional, fondo de garantías y el programa más colombiano que nunca. Recuerda para el semestre 2020-2 trae alivios especiales que facilitan el acceso a estos créditos.
+				div.acordion3.accordions.mobile
+					a Más Información
+					+acordion-3
+						
+							
+		
+		div.acordion_desktop
+			+acordion-7
+			+acordion-8
+			+acordion-9
+			
+		
+		
+			
+		
+	section.convocatoria
+		div
+			h2 Convocatoria
+			h3 Fecha de Apertura: 18 mayo 2020
+			h3 Fecha de Cierre: 19 junio 2020
+			img(src="images/photos/convocatoria.png" alt="convocatoria")
+			
+			
+	section.requisitos.opciones
+		div.txt
+			h1 Entidades aliadas
+			p Hemos fortalecido nuestra relación con distintas entidades para ofrecerte tasas y beneficios acordes a tus necesidades. A continuación, encontrarás opciones de financiación a corto y largo plazo y las condiciones que debes tener en cuenta para facilitar tus pagos de matrícula. Conócelas ingresando a cada entidad financiera:
+			div.acordion7.accordions.mobile
+				a Más Información
+				div.content-acordion.content_accordion_7
+					img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+					p Conoce los beneficios y tasas de interés ingresando a cada entidad financiera:
+					ul
+						li Financiar: <a href="https://www.financiar.com.co/credito-educativo" target="_blank">https://www.financiar.com.co/credito-educativo</a>
+						li Bancolombia: <a href="https://www.grupobancolombia.com/personas/productos-servicios/creditos/estudio" target="_blank">https://www.grupobancolombia.com/personas/productos-servicios/creditos/estudio</a>
+						li Fincomercio: <a href="https://www.fincomercio.com/credito-libre-vehiculo-educativo/credito-educativo/">https://www.fincomercio.com/credito-libre-vehiculo-educativo/credito-educativo/</a>
+						li Banco de Bogotá: <a href="https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/productos/para-ti/creditos-y-financiacion/crediestudiantil">https://www.bancodebogota.com/wps/portal/banco-de-bogota/bogota/productos/para-ti/creditos-y-financiacion/crediestudiantil</a>
+						
+		div.image
+			img(src="images/photos/estudiante-entidades.png" alt="requisitos")
+			
+			
+	section.banner_opciones_financiacion
+		div.banner_opciones
+			img(src='images/photos/estudiante-opciones-financiacion.png' alt='Opciones de financiación')
+			h1 Conoce toda la información sobre nuestras Opciones de Financiación
+			a(href="#" target="_blank") Ver más
+		div.info_contact
+			p Mayor información: <a href="mailto:asesorfinanzas3@unbosque.edu.co" target="_blank">asesorfinanzas3@unbosque.edu.co</a> Extensión: 1150
+			
+			
+			
+	+footer
+	
+	
+	
+	
+	

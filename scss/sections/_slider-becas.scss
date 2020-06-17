@@ -1,0 +1,92 @@
+/* ---------------------------------- slider becas  -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.container_slider{
+	position: relative;
+	
+	@media (max-width: $breakpoint_3){
+		text-align: center;
+	}
+	
+	.slider-becas{
+		z-index: 0;
+		max-width: 95%;
+		margin: auto;
+		
+		@media (max-width: $breakpoint_3){
+			max-width: 100%;
+		}
+		
+		.cards{
+			padding: 1rem;
+			
+		}
+		
+	}
+	
+	.slider-becas-2{
+		max-width: 90%;
+		margin: auto;
+	}
+		
+	.slick-arrow.prev{
+		position: absolute;
+		right: 0;
+		z-index: 100;
+		top: 50%;
+		
+		@media (max-width: $breakpoint_3){
+			position: relative;
+			top: initial;
+			display: inline-block;
+			margin-left: .5rem
+		}
+		
+	}
+		
+	.slick-arrow.next{
+		position: absolute;
+		left: 0;
+		z-index: 100;
+		top: 50%;
+		
+		@media (max-width: $breakpoint_3){
+			position: relative;
+			top: initial;
+			display: inline-block;
+			margin-right: .5rem
+		}
+		
+	}
+	
+	.slick-arrow.prev2{
+		display: none;
+		
+		@media (max-width: $breakpoint_3){
+			position: relative;
+			top: initial;
+			display: inline-block !important;
+			margin-left: .5rem
+		}
+		
+	}
+		
+	.slick-arrow.next2{
+		display: none;
+		
+		@media (max-width: $breakpoint_3){
+			position: relative;
+			top: initial;
+			display: inline-block !important;
+			margin-right: .5rem
+		}
+		
+	}
+	
+}
+
+
+
+
+
+

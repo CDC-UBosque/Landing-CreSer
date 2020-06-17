@@ -1,0 +1,102 @@
+extends ./jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Apoyos Económicos
+
+//- Content page
+block content
+
+	+header-pages('../../images/photos/estudiante-apoyos-economicos-banner.png','Apoyos económicos','Apoyos económicos')
+			
+	
+	section.becas.inners
+		h1 Becas abiertas
+		p Buscando ayudar a nuestra comunidad universitaria, hemos pensado en este espacio para que te enteres de toda la información que necesitas. Te invitamos a conocer más sobre los apoyos económicos que tenemos a tu disposición. Recuerda consultar el acuerdo 14608 para obtener más detalles al respecto. 
+		
+		div.cards-content
+			div.cards
+				img(src="../../images/photos/excelencia-academica.png" alt="Excelencia académica")
+				div.box
+					h2 Excelencia académica - Permanencia
+					p Mejor promedio de cada programa y que se encuentre cursando desde el primer hasta el último semestre, en los programas de pregrado. Estas becas se adjudica con el reporte que notifica cada Unidad Académica del mejor promedio de toda la carrera. No se aplica de manera directa por los estudiantes. Beneficio de hasta el 50%  
+				div.acordion1.accordions.mobile
+					a Más Información
+					+acordion-1
+								
+			div.cards
+				img(src="images/photos/grupos-especiales.png" alt="Grupos especiales")
+				div.box
+					h2 Grupos especiales
+					p Dirigida a estudiantes que pertenezcan a poblaciones especiales (etnias) que sean admitidos en los diferentes programas de pregrado.
+				div.acordion2.accordions.mobile
+					a Más Información
+					+acordion-2
+						
+			div.cards
+				img(src="images/photos/merito-academico.png" alt="Merito académico")
+				div.box
+					h2 Mérito Académico y necesidad socio - económica
+					p Este apoyo ha sido otorgado de manera automática a todos los estudiantes de pregrado de la Universidad El Bosque por el 15% para el Periodo 2020-II.
+				//- div.acordion3.accordions.mobile
+					a Más Información
+					+acordion-3
+						
+							
+		
+		div.acordion_desktop
+			+acordion-1
+			+acordion-2
+			+acordion-3
+			
+		
+		div.cards-content
+			div.cards
+				img(src="images/photos/programa-semillas.png" alt="Programa semillas")
+				div.box
+					h2 Programa Semillas
+					p Buscamos formar grandes profesionales y dar apoyo económico a estudiantes de escasos recursos con un alto rendimiento académico, beneficiando su calidad de vida a través de su formación de pregrado y del entorno universitario que ofrece nuestra institución. Beneficio de hasta el 15%
+				div.acordion4.accordions.mobile
+					a Más Información
+					+acordion-4
+								
+			div.cards
+				img(src="images/photos/enocnomia-naranja.png" alt="Economáa naranja")
+				div.box
+					h2 Economía Naranja Banco de Bogotá
+					p Buscamos apoyar las carreras en el marco de las industrias creativas y la cultura como un motor de desarrollo para el país. Aplica sólo para las Facultades de Ingeniería y Creación y Comunicación. Beneficio de hasta el 15%
+				div.acordion5.accordions.mobile
+					a Más Información
+					+acordion-5
+						
+			div.cards
+				img(src="images/photos/fundacion-bolivar.png" alt="Fundación bolivar")
+				div.box
+					h2 Próximamente: Becas al Talento - Fundación Bolivar Davivienda
+					p Para evitar la deserción de jóvenes destacados por su desempeño académico en la vida universitaria, la Fundación Bolívar Davivienda ha creado el programa Becas Crédito por la Excelencia, que está dirigido a estudiantes de pregrado con altas calificaciones, que se encuentren cursando entre 5to y 8vo semestre, y que estén atravesando por dificultades económicas que les impidan la continuidad de su proceso formativo.
+				div.acordion6.accordions.mobile
+					a Más Información
+					+acordion-6
+				
+		
+		div.acordion_desktop
+			+acordion-4
+			+acordion-5
+			+acordion-6
+			
+		
+	section.convocatoria
+		div
+			h2 Convocatoria
+			h3 Fecha de Apertura: 18 mayo 2020
+			h3 Fecha de Cierre: 19 junio 2020
+			img(src="images/photos/convocatoria.png" alt="convocatoria")
+			
+			
+			
+	+footer
+	
+	
+	
+	
+	

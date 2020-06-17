@@ -23,13 +23,14 @@
 			
 			h2{
 				@include font_universal (
-					$font_family_line_height: 22px ,
+					$font_family_line_height: 22px,
 					$font_family_weight: 300,
 					$font_family_size: 20px,
 					$font_family_color: $color_text,
 					$font_family_letter_spacing: 0,
 					$font_family_group: $font_acherus_black
 				);
+				
 			}
 			
 		}

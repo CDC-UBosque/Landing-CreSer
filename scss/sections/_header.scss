@@ -17,12 +17,44 @@ header{
 		@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
 		
 		nav{
+			margin: 2rem 0;
+			grid-gap: 2rem;
 			@include grid-child-column (1, 13);
 			@include grid-child-row (1, 2); 
+			@include display-grid;
+			@include grid-parent-2-columns (auto, 1fr);
+			
+			@media (max-width: $breakpoint_2){
+				padding: 0 1rem;
+			}
+			
+			@media (max-width: $breakpoint_3){
+				grid-gap: 0rem;
+				@include grid-parent-1-columns (1fr);
+			}
 			
 			ul{
 				margin: 0;
-				padding: 2rem;
+				padding: 0;
+				
+				
+				&:first-child{
+					@include grid-child-column (1, 2);
+					@include grid-child-row (1, 2);
+				}
+				
+				&:last-child{
+					align-self: center;
+					justify-self: end;
+					@include grid-child-column (2, 3);
+					@include grid-child-row (1, 2);
+					
+					@media (max-width: $breakpoint_3){
+						@include grid-child-column (1, 2);
+						@include grid-child-row (2, 3);
+					}
+					
+				}
 				
 				li{
 					list-style-type: none;
@@ -35,29 +67,36 @@ header{
 					a.txt{
 						
 						@include font_universal (
-							$font_family_line_height: 22px,
+							$font_family_line_height: 18px,
 							$font_family_weight: 300,
-							$font_family_size: 18px,
+							$font_family_size: 16px,
 							$font_family_color: $color-brand-white,
 							$font_family_letter_spacing: 0,
 							$font_family_group: $font_acherus_regular
 						);
 						
-						&:after{
-							position: absolute;
-							content: "";
-							background: $color_yellow;
-							height: 2px;
-							width: 100%;
-							bottom: 0rem;
-							left: 0;
+						@media (max-width: $breakpoint_3){
+							font-size: 14px;
+							line-height: 16px;
+						}
+						
+						&:active{
+							&:after{
+								position: absolute;
+								content: "";
+								background: $color_yellow;
+								height: 2px;
+								width: 100%;
+								bottom: 0rem;
+								left: 0;
+							}
 						}
 						
 					}
 					
 					a{
 						vertical-align: middle;
-						margin-right: 2rem;
+						margin-right: 1rem;
 					}
 					
 				}
@@ -188,11 +227,277 @@ header{
 		
 		@media (max-width: $breakpoint_3){
 			right: -2rem;
-			bottom: 12rem;
+			bottom: 15rem;
 		}
 		
 		@media (max-width: $breakpoint_4){
-			bottom: 14rem;
+			bottom: 18rem;
+		}
+			
+	}
+	
+}
+
+header.pages{
+	background: $color_green;
+	max-height: 700px;
+	
+	@media (max-width: $breakpoint_3){
+		max-height: 600px;
+	}
+	
+	.content{
+		position: relative;
+		@include max-width;
+		@include display-grid;
+		@include grid-parent-12-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+		
+		nav{
+			margin: 2rem 0;
+			grid-gap: 2rem;
+			@include grid-child-column (1, 13);
+			@include grid-child-row (1, 2); 
+			@include display-grid;
+			@include grid-parent-2-columns (auto, 1fr);
+			
+			@media (max-width: $breakpoint_2){
+				padding: 0 1rem;
+			}
+			
+			@media (max-width: $breakpoint_3){
+				grid-gap: 0rem;
+				@include grid-parent-1-columns (1fr);
+			}
+			
+			ul{
+				margin: 0;
+				padding: 0;
+				
+				
+				&:first-child{
+					@include grid-child-column (1, 2);
+					@include grid-child-row (1, 2);
+				}
+				
+				&:last-child{
+					align-self: center;
+					justify-self: end;
+					@include grid-child-column (2, 3);
+					@include grid-child-row (1, 2);
+					
+					@media (max-width: $breakpoint_3){
+						@include grid-child-column (1, 2);
+						@include grid-child-row (2, 3);
+					}
+					
+				}
+				
+				li{
+					list-style-type: none;
+					display: inline-block;
+					
+					&:before{
+						display: none;
+					}
+					
+					a.txt{
+						
+						@include font_universal (
+							$font_family_line_height: 18px,
+							$font_family_weight: 300,
+							$font_family_size: 16px,
+							$font_family_color: $color-brand-white,
+							$font_family_letter_spacing: 0,
+							$font_family_group: $font_acherus_regular
+						);
+						
+						@media (max-width: $breakpoint_3){
+							font-size: 14px;
+							line-height: 16px;
+						}
+						
+						&:active{
+							&:after{
+								position: absolute;
+								content: "";
+								background: $color_yellow;
+								height: 2px;
+								width: 100%;
+								bottom: 0rem;
+								left: 0;
+							}
+						}
+						
+					}
+					
+					a{
+						vertical-align: middle;
+						margin-right: 1rem;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	div{
+		
+		&:nth-child(2){
+			place-self: center;
+			position: relative;
+			right: 0;
+			margin-top: 0rem;
+			margin-bottom: 3rem;
+			@include grid-child-column (1, 4);
+			@include grid-child-row (2, 4); 
+			
+			@media (max-width: $breakpoint_2){
+				right: 0rem;
+			}
+			
+			@media (max-width: $breakpoint_4){
+				right: 1rem;
+			}
+			
+			@media (max-width: $breakpoint_5){
+				display: none;
+			}
+			
+			img{
+				max-width: 330px;
+				@media (max-width: $breakpoint_2){
+					max-width: 250px;
+				}
+				
+				@media (max-width: $breakpoint_3){
+					max-width: 200px;
+				}
+			}
+			
+			@media (max-width: $breakpoint_3_1){
+				display: none;
+			}
+			
+		}
+		
+		&:nth-child(3){
+			place-self: center;
+			text-align: center;
+			@include grid-child-column (5, 9);
+			@include grid-child-row (2, 4); 
+			img{
+				max-width: 289px;
+				margin: auto;
+				@media (max-width: $breakpoint_3){
+					max-width: 200px;
+				}
+			}
+			h1{
+				text-align: center;
+				margin-top: 4rem;
+				color: $color-brand-white;
+				font-size: 32px;
+				&:after{
+					left: 27%;
+					@media (max-width: $breakpoint_3){
+						left: 17%;
+					}
+					@media (max-width: $breakpoint_3_1){
+						left: 27%;
+					}
+				}
+			}
+			a{
+				@include btn_dark_green;
+			}
+			
+			@media (max-width: $breakpoint_3){
+				@include grid-child-column (5, 9);
+				@include grid-child-row (2, 4); 
+			}
+			
+			@media (max-width: $breakpoint_3_1){
+				@include grid-child-column (1, 13);
+				@include grid-child-row (2, 4);
+			}
+			
+		}
+		
+	}
+	
+	.btn_donacion{
+		place-self: center;
+		position: relative;
+		@include grid-child-column (10, 13);
+		@include grid-child-row (2, 4);
+		
+		@media (max-width: $breakpoint_3){
+			left: -2rem;
+			margin: 0;
+			padding: 0;
+			
+			a{
+				margin: 0;
+			}
+			
+		}
+		
+		.resutltados{
+			width: 220%;
+			@media (max-width: $breakpoint_3_1){
+				left: -80%;
+			}
+			
+			@media (max-width: $breakpoint_5){
+				width: 180%;
+				left: -50%;
+			}
+		}
+		
+		@media (max-width: $breakpoint_3_1){
+			left: 0;
+			margin: 1rem auto;
+			@include grid-child-column (1, 13);
+			@include grid-child-row (4, 5);
+		}
+		
+	}
+	
+	.vigilada{
+		position: absolute;
+		right: 0%;
+		bottom: 7rem;
+		left: -1rem;
+		width: 7rem;
+		transform: rotate(-90deg);
+		@include grid-child-column (12, 13);
+		@include grid-child-row (1, 4);
+		@include font_universal (
+			$font_family_line_height: 11px,
+			$font_family_weight: 300,
+			$font_family_size: 10px,
+			$font_family_color: $color-brand-white,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font_acherus_light
+		);
+		
+		@media (max-width: $breakpoint_2){
+			bottom: 8rem;
+		}
+		
+		@media (max-width: $breakpoint_3){
+			right: -3rem;
+		}
+		
+		@media (max-width: $breakpoint_3_1){
+			left: -2rem;
+		}
+		
+		@media (max-width: $breakpoint_4){
+			bottom: 8rem;
 		}
 			
 	}

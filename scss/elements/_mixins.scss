@@ -258,6 +258,10 @@ $font_family_group: $family) {
 	margin: auto;
 }
 
+@mixin max-width-p{
+	max-width: 780px;
+}
+
 
 // ------------------------ buttons --------------------------- //
 // --------------------------------------------------- //
@@ -454,6 +458,46 @@ $font_family_group: $family) {
 }
 
 
+// ------------------------ sliders --------------------------- //
+// --------------------------------------------------- //
 
-
-
+@mixin sliders{
+	.slider-becas{
+		z-index: 0;
+		max-width: 95%;
+		margin: auto;
+		
+		.cards{
+			grid-gap: 2.5rem;
+			padding: 1rem;
+			@include display-grid;
+			@include grid-parent-2-columns (1fr, 1fr);
+			
+			img{
+				@include grid-child-column (1, 3);
+				@include grid-child-row (1, 2); 
+			}
+			
+			span{
+				align-self: center;
+				margin-top: 3rem;
+				@include grid-child-column (2, 3);
+				@include grid-child-row (1, 2);
+				@include font_universal (
+					$font_family_line_height: 22px ,
+					$font_family_weight: 300,
+					$font_family_size: 20px,
+					$font_family_color: $color_text,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font_acherus_black
+				);
+			}
+			
+			span.white{
+				color: $color-brand-white;
+			}
+			
+		}
+		
+	}
+}

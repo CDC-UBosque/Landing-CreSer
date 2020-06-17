@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>arrow oval down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-CreSer" transform="translate(-130.000000, -1092.000000)">
+            <g id="arrow-oval-down" transform="translate(149.000000, 1111.000000) rotate(-270.000000) translate(-149.000000, -1111.000000) translate(130.000000, 1092.000000)">
+                <circle id="Oval" stroke="#9FC939" stroke-width="3" fill="#FFFFFF" fill-rule="evenodd" cx="19" cy="19" r="17.5"></circle>
+                <polyline id="Path-2" stroke="#6D6D6D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="12 16 18.62926 22.62926 25.25852 16"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

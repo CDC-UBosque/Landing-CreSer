@@ -375,6 +375,19 @@
 	});
 	
 	// -------------
+	// donar header
+	
+	$(".btn_donar a").click(function() {
+		$(".btn_donar a").toggleClass("open");
+		$(".btn_donacion .resultados_donar").toggleClass("open");
+	});
+	
+	$(".resultados_donar .close-button").click(function() {
+		$(".btn_donar a").toggleClass("open");
+		$(".btn_donacion .resultados_donar").toggleClass("open");
+	});
+	
+	// -------------
 	// educacion calidad
 	
 	$(".btn_ODS .logo_ODS").click(function() {
@@ -409,5 +422,111 @@
 	});
 	
 	
+	// -------------
+	// resultados entidades aliadas
+	
+	$(".acordion7 a").click(function() {
+		$(".content_accordion_7").toggleClass("open");
+		$(".acordion7 a").toggleClass("open");
+	});
+	
+	$(".content_accordion_7 .close-button").click(function() {
+		$(".content_accordion_7").toggleClass("open");
+		$(".acordion7 a").toggleClass("open");
+	});
+	
+	
+	$(document).ready(function(){
+		$('.slider-becas').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			infinite: false,
+			arrows:true,
+			infinite: true,
+			cssEase: 'linear',
+			swipe: false,
+			pauseOnHover:true,
+			prevArrow: $('.next'),
+			nextArrow: $('.prev'),
+			// the magic
+			responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					settings: 'unslick'
+				}
+			
+			}, 
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					infinite: true,
+					settings: 'unslick'
+				}
+			
+			}]
+		});
+	});
+	
+	$(document).ready(function(){
+		$('.slider-videos').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			infinite: true,
+			arrows:true,
+			infinite: true,
+			cssEase: 'linear',
+			swipe: false,
+			pauseOnHover:true,
+			prevArrow: $('.next1'),
+			nextArrow: $('.prev1'),
+		});
+	});
+	
+	$(document).ready(function(){
+		$('.slider-becas-2').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			infinite: true,
+			arrows:true,
+			infinite: true,
+			cssEase: 'linear',
+			swipe: false,
+			pauseOnHover:true,
+			prevArrow: $('.next2'),
+			nextArrow: $('.prev2'),
+			// the magic
+			responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					settings: 'unslick'
+				}
+			
+			}, 
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					infinite: true,
+					settings: 'unslick'
+				}
+			
+			}]
+		});
+	});
+	
 	
 })(jQuery);
+

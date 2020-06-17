@@ -59,6 +59,77 @@
 	
 }
 
+.requisitos.opciones{
+	margin: 7rem auto;
+	grid-gap: 3rem;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	
+	@media (max-width: $breakpoint_3){
+		@include grid-parent-1-columns (1fr);
+	}
+		
+	.image{
+		position: relative;
+		max-height: 360px;
+		background: $color_green;
+		@include grid-child-column (2, 3);
+		@include grid-child-row (1, 2); 
+		
+		@media (max-width: $breakpoint_4){
+			height: 360px;
+			@include grid-child-column (1, 2);
+			@include grid-child-row (2, 3); 
+		}
+		
+		@media (max-width: $breakpoint_3){
+			height: 260px;
+			margin-top: 2rem;
+			@include grid-child-column (1, 2);
+			@include grid-child-row (2, 3); 
+		}
+		
+		&:before{
+			content: "";
+			background: $color_green;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 300%;
+			right: -300%;
+			left: 0;
+			@media (max-width: $breakpoint_3){
+				display: none;
+			}
+		}
+		
+		img{
+			position: absolute;
+			max-width: 360px;
+			bottom: 0;
+			right: 0%;
+		}
+		
+	}
+	
+	.txt{
+		@include grid-child-column (1, 2);
+		@include grid-child-row (1, 2);
+		
+		.accordions{
+			margin-top: 0;
+			text-align: left;
+			
+			.content-acordion.open{
+				display: block;
+			}
+			
+		}
+		
+	}
+	
+}
+
 
 
 
