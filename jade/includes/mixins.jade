@@ -29,25 +29,33 @@ mixin pop-up-enter
 //- ----------------------------
 //- ---------------------------- header menu ------------------------------- //
 //- ----------------------------
+mixin header-back-u
+	div.back
+		section
+			<a href="https://www.unbosque.edu.co" target="_blank"><i class="fas fa-caret-left"></i> Ir a la Universidad el Bosque</a>
+
+mixin nav-header
+	nav
+		ul
+			li
+				a(href='../../'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
+			
+		ul
+			li
+				a.txt(href='../../apoyos-economicos.html') Apoyos económicos
+			li
+				a.txt(href='../../opciones-de-financiacion.html') Opciones de financiación
+			li
+				a.txt(href='../../preguntas-frecuentes.html') Preguntas frecuentes
+			li
+				a.txt(href='../../aliados-estrategicos.html') Aliados estratégicos
+				
 
 mixin header-home
+	+header-back-u
 	header
 		div.content
-			nav
-				ul
-					li
-						a(href='../../'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
-					
-				ul
-					li
-						a.txt(href='../../apoyos-economicos.html') Apoyos económicos
-					li
-						a.txt(href='../../opciones-de-financiacion.html') Opciones de financiación
-					li
-						a.txt(href='../../preguntas-frecuentes.html') Preguntas frecuentes
-					li
-						a.txt(href='../../aliados-estrategicos.html') Aliados estratégicos
-						
+			+nav-header
 			
 			div
 				img(src="images/photos/estudiante.png" alt="Estudiante")
@@ -65,22 +73,10 @@ mixin header-home
 				
 
 mixin header-pages(urlimg, alttext, textobanner)
+	+header-back-u
 	header.pages
 		div.content
-			nav
-				ul
-					li
-						a(href='../../'): img(src="images/svg/Logo-universidad.svg" alt="Logo-universidad" )
-				ul
-					li
-						a.txt(href='../../apoyos-economicos.html') Apoyos económicos
-					li
-						a.txt(href='../../opciones-de-financiacion.html') Opciones de financiación
-					li
-						a.txt(href='../../preguntas-frecuentes.html') Preguntas frecuentes
-					li
-						a.txt(href='../../aliados-estrategicos.html') Aliados estratégicos
-						
+			+nav-header
 			
 			div
 				img(src=urlimg alt=alttext)
