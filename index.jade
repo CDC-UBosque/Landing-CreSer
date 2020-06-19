@@ -81,7 +81,7 @@ block content
 				img(src="../../images/svg/next.svg" alt="next")
 		
 		div.btn_more
-			a.btn_dark_green(href='../../apoyos-economicos.html') Ver más información
+			a.btn_dark_green(href='../../opciones-de-financiacion.html') Ver más información
 		
 		
 	section.convocatoria
@@ -92,59 +92,11 @@ block content
 			img(src="images/photos/convocatoria.png" alt="convocatoria")
 			
 	
-	section.interesar
-		h1 Te puede interesar
-		div.container_slider_video
-		
-			div.slider-videos
-				div.video
-					div.embed-container
-						<iframe src="https://www.youtube.com/embed/lZSs6pogoPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						
-				div.video
-					div.embed-container
-						<iframe src="https://www.youtube.com/embed/l-CM-qnVl9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						
-			span.next1.slick-arrow
-				img(src="../../images/svg/prev.svg" alt="prev")
-			span.prev1.slick-arrow
-				img(src="../../images/svg/next.svg" alt="next")
+	+te-puede-interesar
 			
 			
-	section.requisitos
-		div.image
-			img(src="images/photos/requisitos.png" alt="requisitos")
-		div.txt
-			h1 Requisitos Generales
-			ul
-				li Promedio acumulado mínimo 3.8
-				li No ser beneficiario de otra beca.
-				li No haber perdido asignaturas.
-				li Matricular todos los créditos.
-				li Estar a paz y salvo con la Universidad.
-				li No presentar fallas disciplinarias.
-				li En caso de ser otorgada alguna de las becas se debe cumplir con el programa de compensación de horas.
-				li Los beneficios económicos otorgados no son acumulables.
-				li Verificar requisitos específicos de cada beca Acuerdo 14608 2017.
-				
-				
-	section.aplicar
-		div
-			h1 Aplica a través del siguiente formulario
-			a(href="https://forms.gle/iGotn6yUAHwn1L2U7" target="_blank") Aplicar
-			
-			
-	section.resultados
-		div.resultados_convocatoria
-			h3 Resultados convocatoria 2020 -2
-			a Consultar
-			div.resultados_consultar
-				img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
-				p Aquí podrás consultar si has sido elegido como beneficiario de alguno de nuestros Apoyos Económicos. Los resultados para el periodo 2020-2 serán publicados el 10 de julio del 2020
-				
-		div.otras_becas
-			h3 Para otras Becas: Acuerdo 14608 de 2017
-			a(href="pdf/politica-de-becas-universidad-el-bosque.pdf" target="_blank") Consultar
+	section.aliados
+		+boton-ods
 
 			
 			

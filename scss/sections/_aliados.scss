@@ -11,10 +11,11 @@
 	
 	.img_aliados{
 		grid-gap: 2rem;
-		@include max-width-p;
-		margin: auto;
+		margin-bottom: 2rem;
+		//@include max-width-p;
+		//margin: auto;
 		@include display-grid;
-		@include grid-parent-3-columns (1fr, 1fr, 1fr);
+		@include grid-parent-6-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
 		
 		@media (max-width: $breakpoint_3){
 			@include grid-parent-3-columns (1fr, 1fr, 1fr);
@@ -49,6 +50,19 @@
 				width: 285px;
 			}
 			
+		}
+		
+	}
+	
+	.img_aliados_2{
+		grid-gap: 2rem;
+		@include max-width;
+		margin: 2rem auto;
+		@include display-grid;
+		@include grid-parent-2-columns (1fr, 1fr);
+		
+		@media (max-width: $breakpoint_3){
+			@include grid-parent-1-columns (1fr);
 		}
 		
 	}

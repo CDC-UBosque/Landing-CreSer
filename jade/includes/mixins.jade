@@ -45,7 +45,7 @@ mixin nav-header
 				a.txt(href='../../apoyos-economicos.html') Apoyos económicos
 			li
 				a.txt(href='../../opciones-de-financiacion.html') Opciones de financiación
-			li
+			//-li
 				a.txt(href='../../preguntas-frecuentes.html') Preguntas frecuentes
 			li
 				a.txt(href='../../aliados-estrategicos.html') Aliados estratégicos
@@ -61,7 +61,7 @@ mixin header-home
 				img(src="images/photos/estudiante.png" alt="Estudiante")
 			div
 				img(src="images/svg/programa-creser.svg" alt="Programa CreSer")
-				a(href='#becas') Conoce más
+				//-a(href='#becas') Conoce más
 			div
 				img(src="images/photos/monedas.png" alt="Apoyo")
 			div
@@ -278,3 +278,47 @@ mixin footer
 	footer
 		hr
 		p <b>Mayor información: <a href="mailto:apoyoseconomicos@unbosque.edu.co" target="_blank">apoyoseconomicos@unbosque.edu.co</a> <br/> Extensiones 1910 - 1124</b>
+		
+		
+		
+//- ----------------------------
+//- ---------------------------- te puede interesar ------------------------------- //
+//- ----------------------------
+
+mixin te-puede-interesar
+	section.interesar
+		h1 Te puede interesar
+		div.container_slider_video
+		
+			div.slider-videos
+				div.video
+					div.embed-container
+						<iframe src="https://www.youtube.com/embed/lZSs6pogoPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+				div.video
+					div.embed-container
+						<iframe src="https://www.youtube.com/embed/l-CM-qnVl9g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+			span.next1.slick-arrow
+				img(src="../../images/svg/prev.svg" alt="prev")
+			span.prev1.slick-arrow
+				img(src="../../images/svg/next.svg" alt="next")
+				
+				
+				
+//- ----------------------------
+//- ---------------------------- boton ODS ------------------------------- //
+//- ----------------------------
+
+mixin boton-ods
+	div.btn_ODS
+		img.logo_ODS(src="images/photos/educacion-calidad.png" alt="Educación de calidad")
+		div.resutltados.resultados_ODS
+			img.close-button(src="../../images/svg/x-btn.svg" alt="x-btn")
+			p Aportamos al desarrollo inclusivo del país a través de la Educación de Calidad con nuestros 33,344 egresados y nuestros 12,741 estudiantes de pregrados y posgrados.
+
+
+
+
+
+
