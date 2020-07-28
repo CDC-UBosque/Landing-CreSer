@@ -527,6 +527,42 @@
 		});
 	});
 	
+	$(document).ready(function(){
+		$('.slider-aliados').slick({
+			dots: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			infinite: false,
+			arrows:false,
+			infinite: true,
+			cssEase: 'linear',
+			swipe: false,
+			pauseOnHover:true,
+			// the magic
+			responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 2,
+					infinite: true,
+					settings: 'unslick'
+				}
+			
+			}, 
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					infinite: true,
+					settings: 'unslick'
+				}
+			
+			}]
+		});
+	});
+	
 	
 })(jQuery);
 

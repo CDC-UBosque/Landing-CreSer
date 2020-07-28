@@ -9,6 +9,22 @@
 		margin: 1rem auto 3rem;
 	}
 	
+	.slider-aliados{
+	
+		.slick-slide{
+			margin: 1rem;
+		}
+		
+		.slick-dots li:before{
+			color: $color_green_dark;
+		}
+		
+		.slick-dots li button:before{
+			display: none;
+		}
+		
+	}
+	
 	.img_aliados{
 		grid-gap: 2rem;
 		margin-bottom: 2rem;
